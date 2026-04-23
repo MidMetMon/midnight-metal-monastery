@@ -305,13 +305,65 @@ a:hover {
 
 
 <!-- Podlove embed -->
-<div class="player-section">
-    <div id="podcast-player"></div>
-    <script src="https://cdn.podlove.org/web-player/5.x/embed.js"></script>
-    <script>
-      podlovePlayer('#podcast-player', {
-        "feed": "https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss"
-      });
+<div id="podcast-player"></div>
+
+<script>
+async function loadLatestEpisode() {
+  const itemId = 'midnight-metal-monastery'; // Replace with your item ID
+  const apiUrl = `https://archive.org/metadata/${itemId}`;
+  
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    
+    // Find the most recent audio file
+    const files = data.files || [];
+    const audioFiles = files.filter(file => 
+      file.format && (
+        file.format.includes('MP3') || 
+        file.format.includes('MPEG') ||
+        file.format.includes('M4A') ||
+        file.format.includes('WAV') ||
+        file.format.includes('OGG')
+      )
+    );
+    
+    // Sort by modification date (most recent first)
+    audioFiles.sort((a, b) => 
+      new Date(b.mtime * 1000) - new Date(a.mtime * 1000)
+    );
+    
+    if (audioFiles.length === 0) {
+      document.getElementById('podcast-player').innerHTML = 
+        '<p>No audio files found.</p>';
+      return;
+    }
+    
+    const latestFile = audioFiles[0];
+    const fileUrl = `https://archive.org/download/${itemId}/${latestFile.name}`;
+    
+    // Create a simple HTML5 audio player
+    const playerHTML = `
+      <audio controls style="width: 100%; max-width: 500px;">
+        <source src="${fileUrl}" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p><strong>Latest Episode:</strong> ${latestFile.name}</p>
+    `;
+    
+    document.getElementById('podcast-player').innerHTML = playerHTML;
+    
+  } catch (error) {
+    console.error('Error loading podcast:', error);
+    document.getElementById('podcast-player').innerHTML = 
+      '<p>Error loading the latest episode.</p>';
+  }
+}
+
+// Load the episode when the page loads
+loadLatestEpisode();
+</script>
+
     </script>
 </div>
 
