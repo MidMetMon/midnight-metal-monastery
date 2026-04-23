@@ -6,7 +6,7 @@ from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 
 # Configuration - EDIT THESE
-COLLECTION_ID = "https://archive.org/details/midnight-metal-monastery"  # Replace with your Archive.org collection ID
+COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org collection ID
 PODCAST_TITLE = "Midnight Metal Monastery"
 PODCAST_DESCRIPTION = "Christian Rock and Metal Podcast"
 PODCAST_AUTHOR = "inspired by the Holy Spirit"
