@@ -4,6 +4,7 @@ import requests
 from datetime import datetime
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
+from urllib.parse import quote
 
 # Configuration - EDIT THESE
 COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org collection ID
@@ -127,7 +128,7 @@ def generate_rss_feed():
             file_size = audio_file["size"]
             
             # Construct download URL
-            download_url = f"https://archive.org/download/{item_id}/{filename}"
+            download_url = f"https://archive.org/download/{item_id}/{quote(filename, safe='')}"
             
             # Create item (episode)
             item_elem = SubElement(channel, "item")
