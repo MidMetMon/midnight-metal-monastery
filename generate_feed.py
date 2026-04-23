@@ -10,7 +10,7 @@ COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org coll
 PODCAST_TITLE = "Midnight Metal Monastery"
 PODCAST_DESCRIPTION = "Christian Rock and Metal Podcast"
 PODCAST_AUTHOR = "inspired by the Holy Spirit"
-PODCAST_IMAGE_URL = "https://github.com/MidMetMon/midnight-metal-monastery/blob/main/images/midnight-metal-monastery_itemimage.jpg"  # URL to a square image (3000x3000 or smaller)
+PODCAST_IMAGE_URL = "https://github.com/MidMetMon/midnight-metal-monastery/blob/main/images/midnight-metal-monastery_itemimage_upscayl_4x_digital-art-4x.jpg"  # URL to a square image (3000x3000 or smaller)
 PODCAST_LINK = "https://MidMetMon.github.io/midnight-metal-monastery"  # Link to your promotion website
 
 def get_collection_items():
