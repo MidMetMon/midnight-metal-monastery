@@ -5,15 +5,15 @@
     <link>https://MidMetMon.github.io/midnight-metal-monastery</link>
     <description>Christian Rock and Metal Podcast</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2026 05:08:17 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 05:14:53 +0000</lastBuildDate>
     <ttl>3600</ttl>
     <itunes:author>inspired by the Holy Spirit</itunes:author>
     <itunes:owner>
       <itunes:name>inspired by the Holy Spirit</itunes:name>
     </itunes:owner>
-    <itunes:image href="https://github.com/MidMetMon/midnight-metal-monastery/blob/main/images/midnight-metal-monastery_itemimage_upscayl_4x_digital-art-4x.jpg"/>
+    <itunes:image href="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_upscayl_4x_digital-art-4x.jpg"/>
     <image>
-      <url>https://github.com/MidMetMon/midnight-metal-monastery/blob/main/images/midnight-metal-monastery_itemimage_upscayl_4x_digital-art-4x.jpg</url>
+      <url>https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_upscayl_4x_digital-art-4x.jpg</url>
       <title>Midnight Metal Monastery</title>
       <link>https://MidMetMon.github.io/midnight-metal-monastery</link>
     </image>
@@ -1132,6 +1132,15 @@
       <guid>https://archive.org/download/mmm-129/MMM 129.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
       <enclosure url="https://archive.org/download/mmm-129/MMM 129.mp3" type="audio/mpeg" length="139292594"/>
+    </item>
+    <item>
+      <title>Midnight Metal Monastery #128 - MMM 128.mp3</title>
+      <link>https://archive.org/details/mmm-128</link>
+      <description>MIDNIGHT METAL MONASTERY #128:   - We are Warrior Monks   - Pre-intro: The Thief on the Cross   - Intro: Warrior Monk Battlecat   - The Lord doth Work in Mysterious Ways   - Earth Groans – Tongue Tied   - A Life Aligned – Hey Sugar   - Verse – Luke 12:4-5   - This Surrender – Anchored   - War of Ages – Battle On   - Verse – 2 Corinthians 4:3-5   - MMM Promo: Boldly Going where No Monks have Gone Before   - My Heart to Fear – The Witching Hour   - My Heart to Fear – The Witching Hour pt. II   - Ed from Texas – God is Love   - Midpoint: Slay the Beast &amp; Live   - Cerimonial Sacred – I Hate Satan   - Taking the Head of Goliath – Cord of Three Strands   - Verse – Jeremiah 2:19   - MMM Promo: When You are Weak   - My Place Was Taken – Cordero y Leon   - The Famine – Consume Devour Repeat   - Verse – Romans 12:19-21   - Sleeping Giant – The Army of the Chosen One   - Final Vortex – Doomsday Clock   - The Lord’s Prayer (dark middle eastern overlay)   - Peace of the Lord   - Pre-outro: The Devil is a Snake   - Outro: Midnight Metal Monastery / MMM T-shirt promo / 14secs Outro music   This show was produced for the Midnight Metal Monastery through the collaborative efforts of David Larry Carroll, Abbot, and Andrew C. Schlett, First Prior. We own none of this music. We do this ONLY for the Glory of the Lord. Jesus Saves!!!</description>
+      <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://archive.org/download/mmm-128/MMM 128.mp3</guid>
+      <itunes:author>inspired by the Holy Spirit</itunes:author>
+      <enclosure url="https://archive.org/download/mmm-128/MMM 128.mp3" type="audio/mpeg" length="139298040"/>
     </item>
     <item>
       <title>Midnight Metal Monastery #127 - MMM 127.mp3</title>
