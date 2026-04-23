@@ -131,7 +131,7 @@ def generate_rss_feed():
             
             # Create item (episode)
             item_elem = SubElement(channel, "item")
-            SubElement(item_elem, "title").text = f"{title} - {filename}"
+            SubElement(item_elem, "title").text = title
             SubElement(item_elem, "link").text = f"https://archive.org/details/{item_id}"
             SubElement(item_elem, "description").text = description or title
             SubElement(item_elem, "pubDate").text = parse_date(pub_date)
