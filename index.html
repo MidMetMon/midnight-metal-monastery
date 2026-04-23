@@ -304,54 +304,40 @@ a:hover {
 </div>
 
 
-<!-- Podlove embed -->
+<!-- Archive.org embed -->
 <div id="podcast-player"></div>
 
 <script>
 async function loadLatestEpisode() {
-  const itemId = 'midnight-metal-monastery'; // Replace with your item ID
-  const apiUrl = `https://archive.org/metadata/${itemId}`;
+  const collectionId = 'midnight-metal-monastery'; // Replace with your collection ID
+  const apiUrl = `https://archive.org/advancedsearch.php?q=collection:${collectionId}&fl=identifier,date,title&sort=date+desc&output=json&rows=1`;
   
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
     
-    // Find the most recent audio file
-    const files = data.files || [];
-    const audioFiles = files.filter(file => 
-      file.format && (
-        file.format.includes('MP3') || 
-        file.format.includes('MPEG') ||
-        file.format.includes('M4A') ||
-        file.format.includes('WAV') ||
-        file.format.includes('OGG')
-      )
-    );
-    
-    // Sort by modification date (most recent first)
-    audioFiles.sort((a, b) => 
-      new Date(b.mtime * 1000) - new Date(a.mtime * 1000)
-    );
-    
-    if (audioFiles.length === 0) {
+    if (!data.response.docs || data.response.docs.length === 0) {
       document.getElementById('podcast-player').innerHTML = 
-        '<p>No audio files found.</p>';
+        '<p>No episodes found in this collection.</p>';
       return;
     }
     
-    const latestFile = audioFiles[0];
-    const fileUrl = `https://archive.org/download/${itemId}/${latestFile.name}`;
+    const latestItem = data.response.docs[0];
+    const itemId = latestItem.identifier;
+    const title = latestItem.title || itemId;
+    const date = latestItem.date || 'Unknown date';
     
-    // Create a simple HTML5 audio player
-    const playerHTML = `
-      <audio controls style="width: 100%; max-width: 500px;">
-        <source src="${fileUrl}" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <p><strong>Latest Episode:</strong> ${latestFile.name}</p>
+    // Create the Archive.org embed iframe
+    const embedHTML = `
+      <iframe src="https://archive.org/embed/${itemId}" 
+        width="560" height="384" frameborder="0" 
+        webkitallowfullscreen="true" 
+        mozallowfullscreen="true" allowfullscreen>
+      </iframe>
+      <p><strong>${title}</strong><br><em>Published: ${date}</em></p>
     `;
     
-    document.getElementById('podcast-player').innerHTML = playerHTML;
+    document.getElementById('podcast-player').innerHTML = embedHTML;
     
   } catch (error) {
     console.error('Error loading podcast:', error);
@@ -360,9 +346,9 @@ async function loadLatestEpisode() {
   }
 }
 
-// Load the episode when the page loads
 loadLatestEpisode();
 </script>
+
 
     </script>
 </div>
