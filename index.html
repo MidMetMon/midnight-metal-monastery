@@ -122,11 +122,11 @@
         margin: 20px auto;
     }
 
-    .podcast-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+.podcast-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;  /* Changed from 0.5rem to 0 */
+}
 
     .podcast-info {
         margin: 0;
@@ -135,13 +135,14 @@
         font-family: 'Special Elite', serif;
     }
 
-    .podcast-info p {
-        margin: 0;
-        color: #fff;
-        background: #000;
-        padding: 10px 40px;
-        display: inline-block;
-    }
+.podcast-info p {
+    margin: 0;
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    display: inline-block;
+    margin-bottom: 0;  /* Add this line explicitly */
+}
 
     /* Tablet */
     @media (max-width: 1024px) {
