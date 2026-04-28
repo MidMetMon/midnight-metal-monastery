@@ -9,11 +9,11 @@ from urllib.parse import quote
 # Configuration - EDIT THESE
 COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org collection ID
 PODCAST_TITLE = "Midnight Metal Monastery"
-PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast."
+PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God."
 PODCAST_AUTHOR = "David Larry Carroll, Abbot and Andrew C. Schlett, First Prior"
 PODCAST_IMAGE_URL = "https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"  # URL to a square image (3000x3000 or smaller)
 PODCAST_LINK = "https://www.midnightmetalmonastery.com"  # Link to your promotion website (updated to https)
-PODCAST_EMAIL = "YOUR_EMAIL_HERE"  # Replace with your contact email
+PODCAST_EMAIL = "contact@midnightmetalmonastery.com"  # Replace with your contact email
 PODCAST_SUBTITLE = "Christian Rock and Metal Podcast"
 PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
 
