@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 from urllib.parse import quote
@@ -91,7 +91,7 @@ def generate_rss_feed():
     SubElement(channel, "link").text = PODCAST_LINK
     SubElement(channel, "description").text = PODCAST_DESCRIPTION
     SubElement(channel, "language").text = "en-us"
-    SubElement(channel, "lastBuildDate").text = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     SubElement(channel, "ttl").text = "3600"  # Update every hour
     
     # iTunes-specific metadata
