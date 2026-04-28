@@ -142,7 +142,7 @@ def generate_rss_feed():
         # Use static description for episodes (does not pull from archive)
         description = PODCAST_DESCRIPTION
         pub_date = item.get("date", "")
-        creator = item.get("creator", PODCAST_AUTHOR)
+        creator = PODCAST_AUTHOR
         
         # Get audio files for this item
         audio_files = get_audio_files(item_id)
