@@ -2,25 +2,32 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Midnight Metal Monastery</title>
-    <link>www.midnightmetalmonastery.com</link>
-    <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+    <link>https://www.midnightmetalmonastery.com</link>
+    <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2026 19:11:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 21:44:00 +0000</lastBuildDate>
     <ttl>3600</ttl>
     <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
+    <itunes:subtitle>Christian Rock and Metal Podcast</itunes:subtitle>
     <itunes:owner>
       <itunes:name>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:name>
+      <itunes:email>contact@midnightmetalmonastery.com</itunes:email>
     </itunes:owner>
     <itunes:image href="https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"/>
     <image>
       <url>https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg</url>
       <title>Midnight Metal Monastery</title>
-      <link>www.midnightmetalmonastery.com</link>
+      <link>https://www.midnightmetalmonastery.com</link>
     </image>
+    <itunes:category text="Religion &amp; Spirituality">
+      <itunes:category text="Christianity"/>
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    <copyright>© 2026 Midnight Metal Monastery</copyright>
     <item>
       <title>Midnight Metal Monastery #251</title>
       <link>https://archive.org/details/mmm-251</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-251/MMM%20251.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -29,7 +36,7 @@
     <item>
       <title>Midnight Metal Monastery #250</title>
       <link>https://archive.org/details/mmm-250</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-250/MMM%20250.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -38,7 +45,7 @@
     <item>
       <title>Midnight Metal Monastery #249</title>
       <link>https://archive.org/details/mmm-249</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-249/MMM%20249.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -47,7 +54,7 @@
     <item>
       <title>Midnight Metal Monastery #248</title>
       <link>https://archive.org/details/mmm-248</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-248/MMM%20248.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -56,7 +63,7 @@
     <item>
       <title>Midnight Metal Monastery #247</title>
       <link>https://archive.org/details/mmm-247</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-247/MMM%20247.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -65,7 +72,7 @@
     <item>
       <title>Midnight Metal Monastery #246</title>
       <link>https://archive.org/details/mmm-246</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-246/MMM%20246.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -74,7 +81,7 @@
     <item>
       <title>Midnight Metal Monastery #245</title>
       <link>https://archive.org/details/mmm-245</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-245/MMM%20245.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -83,7 +90,7 @@
     <item>
       <title>Midnight Metal Monastery #244</title>
       <link>https://archive.org/details/mmm-244</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-244/MMM%20244.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -92,7 +99,7 @@
     <item>
       <title>Midnight Metal Monastery #243</title>
       <link>https://archive.org/details/mmm-243</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 11 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-243/MMM%20243.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -101,7 +108,7 @@
     <item>
       <title>Midnight Metal Monastery #242</title>
       <link>https://archive.org/details/mmm-242</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 04 Feb 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-242/MMM%20242.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -110,7 +117,7 @@
     <item>
       <title>Midnight Metal Monastery #241</title>
       <link>https://archive.org/details/mmm-241</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-241/MMM%20241.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -119,7 +126,7 @@
     <item>
       <title>Midnight Metal Monastery #239</title>
       <link>https://archive.org/details/mmm-239</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-239/MMM%20239.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -128,7 +135,7 @@
     <item>
       <title>Midnight Metal Monastery #238</title>
       <link>https://archive.org/details/mmm-238</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-238/MMM%20238.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -137,7 +144,7 @@
     <item>
       <title>Midnight Metal Monastery #237</title>
       <link>https://archive.org/details/mmm-237</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 16 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-237/MMM%20237.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -146,7 +153,7 @@
     <item>
       <title>Midnight Metal Monastery #236</title>
       <link>https://archive.org/details/mmm-236</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 11 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-236/MMM%20236.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -155,7 +162,7 @@
     <item>
       <title>Midnight Metal Monastery #235</title>
       <link>https://archive.org/details/mmm-235</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-235/MMM%20235.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -164,7 +171,7 @@
     <item>
       <title>Midnight Metal Monastery #234</title>
       <link>https://archive.org/details/mmm-234</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 26 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-234/MMM%20234.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -173,7 +180,7 @@
     <item>
       <title>Midnight Metal Monastery #233</title>
       <link>https://archive.org/details/mmm-233</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 12 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-233/MMM%20233.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -182,7 +189,7 @@
     <item>
       <title>Midnight Metal Monastery #232</title>
       <link>https://archive.org/details/mmm-232</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 05 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-232/MMM%20232.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -191,7 +198,7 @@
     <item>
       <title>Midnight Metal Monastery #231</title>
       <link>https://archive.org/details/mmm-231</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-231/MMM%20231.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -200,16 +207,25 @@
     <item>
       <title>Midnight Metal Monastery #230</title>
       <link>https://archive.org/details/mmm-230</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 09 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-230/MMM%20230.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
       <enclosure url="https://archive.org/download/mmm-230/MMM%20230.mp3" type="audio/mpeg" length="139378012"/>
     </item>
     <item>
+      <title>Midnight Metal Monastery #229</title>
+      <link>https://archive.org/details/mmm-229</link>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://archive.org/download/mmm-229/MMM%20229.mp3</guid>
+      <itunes:author>inspired by the Holy Spirit</itunes:author>
+      <enclosure url="https://archive.org/download/mmm-229/MMM%20229.mp3" type="audio/mpeg" length="139341379"/>
+    </item>
+    <item>
       <title>Midnight Metal Monastery #228</title>
       <link>https://archive.org/details/mmm-228</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-228/MMM%20228.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -218,7 +234,7 @@
     <item>
       <title>Midnight Metal Monastery #227</title>
       <link>https://archive.org/details/mmm-227</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 03 Sep 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-227/MMM%20227.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -227,7 +243,7 @@
     <item>
       <title>Midnight Metal Monastery #226</title>
       <link>https://archive.org/details/mmm-226</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-226/MMM%20226.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -236,7 +252,7 @@
     <item>
       <title>Midnight Metal Monastery #225</title>
       <link>https://archive.org/details/mmm-225</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Fri, 22 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-225/MMM%20225.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -245,7 +261,7 @@
     <item>
       <title>Midnight Metal Monastery #224</title>
       <link>https://archive.org/details/mmm-224</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-224/MMM%20224.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -254,7 +270,7 @@
     <item>
       <title>Midnight Metal Monastery #223</title>
       <link>https://archive.org/details/mmm-223</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-223/MMM%20223.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -263,7 +279,7 @@
     <item>
       <title>Midnight Metal Monastery #222</title>
       <link>https://archive.org/details/mmm-222</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 31 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-222/MMM%20222.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -272,7 +288,7 @@
     <item>
       <title>Midnight Metal Monastery #221</title>
       <link>https://archive.org/details/mmm-221</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 23 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-221/MMM%20221.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -281,7 +297,7 @@
     <item>
       <title>Midnight Metal Monastery #220</title>
       <link>https://archive.org/details/mmm-220</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-220/MMM%20220.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -290,7 +306,7 @@
     <item>
       <title>Midnight Metal Monastery #219</title>
       <link>https://archive.org/details/mmm-219</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-219/MMM%20219.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -299,7 +315,7 @@
     <item>
       <title>Midnight Metal Monastey #218</title>
       <link>https://archive.org/details/mmm-218</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-218/MMM%20218.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -308,7 +324,7 @@
     <item>
       <title>Midnight Metal Monastery #217</title>
       <link>https://archive.org/details/mmm-217</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 18 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-217/MMM%20217.mp3</guid>
       <itunes:author>inpired by the Holy Spirit</itunes:author>
@@ -317,7 +333,7 @@
     <item>
       <title>Midnight Metal Monastery #216</title>
       <link>https://archive.org/details/mmm-216</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 11 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-216/MMM%20216.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -326,7 +342,7 @@
     <item>
       <title>Midnight Metal Monastery #215</title>
       <link>https://archive.org/details/mmm-215</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 05 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-215/MMM%20215.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -335,7 +351,7 @@
     <item>
       <title>Midnight Metal Monastery #214</title>
       <link>https://archive.org/details/mmm-214</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 21 May 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-214/MMM%20214.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -344,7 +360,7 @@
     <item>
       <title>Midnight Metal Monastery #213</title>
       <link>https://archive.org/details/mmm-213</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-213/MMM%20213.mp3</guid>
       <itunes:author>Inspired by the Holy Spirit</itunes:author>
@@ -353,7 +369,7 @@
     <item>
       <title>Midnight Metal Monastery #212</title>
       <link>https://archive.org/details/mmm-212</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-212/MMM%20212.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -362,7 +378,7 @@
     <item>
       <title>Midnight Metal Monastery #211</title>
       <link>https://archive.org/details/mmm-211</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-211/MMM%20211.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -371,7 +387,7 @@
     <item>
       <title>Midnight Metal Monastery #210</title>
       <link>https://archive.org/details/mmm-210</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 23 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-210/MMM%20210.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -380,7 +396,7 @@
     <item>
       <title>Midnight Metal Monastery #209</title>
       <link>https://archive.org/details/mmm-209</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-209/MMM%20209.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -389,7 +405,7 @@
     <item>
       <title>Midnight Metal Monastery #208</title>
       <link>https://archive.org/details/mmm-208</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 27 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-208/MMM%20208.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -398,7 +414,7 @@
     <item>
       <title>Midnight Metal Monastery #207</title>
       <link>https://archive.org/details/mmm-207</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-207/MMM%20207.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -407,7 +423,7 @@
     <item>
       <title>Midnight Metal Monastery #206</title>
       <link>https://archive.org/details/mmm-206</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 12 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-206/MMM%20206.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -416,7 +432,7 @@
     <item>
       <title>Midnight Metal Monastery #205</title>
       <link>https://archive.org/details/mmm-205</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-205/MMM%20205.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -425,7 +441,7 @@
     <item>
       <title>Midnight Metal Monastery #204</title>
       <link>https://archive.org/details/mmm-204</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-204/MMM%20204.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -434,7 +450,7 @@
     <item>
       <title>Midnight Metal Monastery #203</title>
       <link>https://archive.org/details/mmm-203</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 19 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-203/MMM%20203.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -443,7 +459,7 @@
     <item>
       <title>Midnight Metal Monastery #202</title>
       <link>https://archive.org/details/mmm-202</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-202/MMM%20202.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -452,7 +468,7 @@
     <item>
       <title>Midnight Metal Monastery #240</title>
       <link>https://archive.org/details/mmm-240</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-240/MMM%20240.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -461,7 +477,7 @@
     <item>
       <title>Midnight Metal Monastery #199</title>
       <link>https://archive.org/details/mmm-199</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-199/MMM%20199.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -470,7 +486,7 @@
     <item>
       <title>Midnight Metal Monastery #198</title>
       <link>https://archive.org/details/mmm-198</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-198/MMM%20198.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -479,7 +495,7 @@
     <item>
       <title>Midnight Metal Monastery #197</title>
       <link>https://archive.org/details/mmm-197</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-197/MMM%20197.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -488,7 +504,7 @@
     <item>
       <title>Midnight Metal Monastery #196</title>
       <link>https://archive.org/details/mmm-196</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-196/MMM%20196.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -497,7 +513,7 @@
     <item>
       <title>Midnight Metal Monastery #195</title>
       <link>https://archive.org/details/mmm-195</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-195/MMM%20195.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -506,7 +522,7 @@
     <item>
       <title>Midnight Metal Monastery #194</title>
       <link>https://archive.org/details/mmm-194</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-194/MMM%20194.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -515,7 +531,7 @@
     <item>
       <title>Midnight Metal Monastery #193</title>
       <link>https://archive.org/details/mmm-193</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 07 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-193/MMM%20193.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -524,7 +540,7 @@
     <item>
       <title>Midnight Metal Monastery #192</title>
       <link>https://archive.org/details/mmm-192</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-192/MMM%20192.mp3</guid>
       <itunes:author>Inspired by the Holy Spirit</itunes:author>
@@ -533,7 +549,7 @@
     <item>
       <title>Midnight Metal Monastery #191 (10-16-24)</title>
       <link>https://archive.org/details/mmm-191-10-16-24</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-191-10-16-24/MMM%20191%20%2810-16-24%29.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -542,7 +558,7 @@
     <item>
       <title>Midnight Metal Monastery #190 (10-10-24)</title>
       <link>https://archive.org/details/mmm-190-10-10-24</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-190-10-10-24/MMM%20190%20%2810-10-24%29.mp3</guid>
       <itunes:author>Inspired by the Holy Spirit</itunes:author>
@@ -551,7 +567,7 @@
     <item>
       <title>Midnight Metal Monastery #189</title>
       <link>https://archive.org/details/mmm-189</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 26 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-189/MMM%20189.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -560,7 +576,7 @@
     <item>
       <title>Midnight Metal Monastery #188</title>
       <link>https://archive.org/details/mmm-188</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-188/MMM%20188.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -569,7 +585,7 @@
     <item>
       <title>Midnight Metal Monastery #187</title>
       <link>https://archive.org/details/mmm-187</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-187/MMM%20187.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -578,7 +594,7 @@
     <item>
       <title>Midnight Metal Monastery #186</title>
       <link>https://archive.org/details/mmm-186</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 21 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-186/MMM%20186.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -587,7 +603,7 @@
     <item>
       <title>Midnight Metal Monastery #185</title>
       <link>https://archive.org/details/mmm-185</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 14 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-185/MMM%20185.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -596,7 +612,7 @@
     <item>
       <title>Midnight Metal Monastery #184</title>
       <link>https://archive.org/details/mmm-184</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-184/MMM%20184.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -605,7 +621,7 @@
     <item>
       <title>Midnight Metal Monastery #183</title>
       <link>https://archive.org/details/mmm-183</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-183/MMM%20183.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -614,7 +630,7 @@
     <item>
       <title>Midnight Metal Monastery #182</title>
       <link>https://archive.org/details/mmm-182</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-182/MMM%20182.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -623,7 +639,7 @@
     <item>
       <title>Midnight Metal Monastery #181</title>
       <link>https://archive.org/details/mmm-181</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-181/MMM%20181.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -632,7 +648,7 @@
     <item>
       <title>Midnight Metal Monastery #180</title>
       <link>https://archive.org/details/mmm-180</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 20 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-180/MMM%20180.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -641,7 +657,7 @@
     <item>
       <title>Midnight Metal Monastery #179</title>
       <link>https://archive.org/details/mmm-179</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 06 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-179/MMM%20179.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -650,7 +666,7 @@
     <item>
       <title>Midnight Metal Monastery #178</title>
       <link>https://archive.org/details/mmm-178</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-178/MMM%20178.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -659,7 +675,7 @@
     <item>
       <title>Midnight Metal Monastery #177</title>
       <link>https://archive.org/details/mmm-177</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-177/MMM%20177.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -668,7 +684,7 @@
     <item>
       <title>Midnight Metal Monastery #176</title>
       <link>https://archive.org/details/mmm-176</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 09 May 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-176/MMM%20176.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -677,7 +693,7 @@
     <item>
       <title>Midnight Metal Monastery #175</title>
       <link>https://archive.org/details/mmm-175</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 02 May 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-175/MMM%20175.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -686,7 +702,7 @@
     <item>
       <title>Midnight Metal Monastery #174</title>
       <link>https://archive.org/details/mmm-174</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-174/MMM%20174.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -695,7 +711,7 @@
     <item>
       <title>Midnight Metal Monastery #173</title>
       <link>https://archive.org/details/mmm-173</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-173/MMM%20173.mp3</guid>
       <itunes:author>Inspired by the Holy Spirit</itunes:author>
@@ -704,7 +720,7 @@
     <item>
       <title>Midnight Metal Monastery #172</title>
       <link>https://archive.org/details/mmm-172</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 04 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-172/MMM%20172.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -713,7 +729,7 @@
     <item>
       <title>Midnight Metal Monastery #171</title>
       <link>https://archive.org/details/mmm-171</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-171/MMM%20171.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -722,7 +738,7 @@
     <item>
       <title>Midnight Metal Monastery #170</title>
       <link>https://archive.org/details/mmm-170-promo-pic</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-170-promo-pic/MMM%20170.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -731,7 +747,7 @@
     <item>
       <title>Midnight Metal Monastery #170</title>
       <link>https://archive.org/details/mmm-170</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-170/MMM%20170.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -740,7 +756,7 @@
     <item>
       <title>Midnight Metal Monastery #169</title>
       <link>https://archive.org/details/mmm-169</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 14 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-169/MMM%20169.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -749,7 +765,7 @@
     <item>
       <title>Midnight Metal Monastery #168</title>
       <link>https://archive.org/details/mmm-168</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-168/MMM%20168.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -758,7 +774,7 @@
     <item>
       <title>Midnight Metal Monastery #167</title>
       <link>https://archive.org/details/mmm-167</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-167/MMM%20167.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -767,7 +783,7 @@
     <item>
       <title>Midnight Metal Monastery #166</title>
       <link>https://archive.org/details/mmm-166</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-166/MMM%20166.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -776,7 +792,7 @@
     <item>
       <title>Midnight Metal Monastery #201</title>
       <link>https://archive.org/details/mmm-201</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Sun, 04 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-201/MMM%20201.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -785,7 +801,7 @@
     <item>
       <title>Midnight Metal Monastery #165</title>
       <link>https://archive.org/details/mmm-165</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-165/MMM%20165.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -794,7 +810,7 @@
     <item>
       <title>Midnight Metal Monastery #164</title>
       <link>https://archive.org/details/mmm-164</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 24 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-164/MMM%20164.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -803,7 +819,7 @@
     <item>
       <title>Midnight Metal Monastery #200</title>
       <link>https://archive.org/details/mmm-200</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Sun, 21 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-200/MMM%20200.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -812,7 +828,7 @@
     <item>
       <title>Midnight Metal Monastery #163</title>
       <link>https://archive.org/details/mmm-163</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 17 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-163/MMM%20163.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -821,7 +837,7 @@
     <item>
       <title>Midnight Metal Monastery #162</title>
       <link>https://archive.org/details/mmm-162</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 09 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-162/MMM%20162.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -830,7 +846,7 @@
     <item>
       <title>Midnight Metal Monastery #161</title>
       <link>https://archive.org/details/mmm-161</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 27 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-161/MMM%20161.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -839,7 +855,7 @@
     <item>
       <title>Midnight Metal Monastery #160</title>
       <link>https://archive.org/details/mmm-160</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 13 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-160/MMM%20160.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -848,7 +864,7 @@
     <item>
       <title>Midnight Metal Monastery #159</title>
       <link>https://archive.org/details/mmm-159</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 06 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-159/MMM%20159.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -857,7 +873,7 @@
     <item>
       <title>Midnight Metal Monastery #158</title>
       <link>https://archive.org/details/mmm-158</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-158/MMM%20158.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -866,7 +882,7 @@
     <item>
       <title>Midnight Metal Monastery #157</title>
       <link>https://archive.org/details/mmm-157</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 23 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-157/MMM%20157.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -875,7 +891,7 @@
     <item>
       <title>Midnight Metal Monastery #156</title>
       <link>https://archive.org/details/mmm-156</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 16 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-156/MMM%20156.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -884,7 +900,7 @@
     <item>
       <title>Midnight Metal Monastery #155</title>
       <link>https://archive.org/details/mmm-155</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-155/MMM%20155.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -893,7 +909,7 @@
     <item>
       <title>Midnight Metal Monastery #154</title>
       <link>https://archive.org/details/mmm-154</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-154/MMM%20154.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -902,7 +918,7 @@
     <item>
       <title>Midnight Metal Monastery #153</title>
       <link>https://archive.org/details/mmm-153</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-153/MMM%20153.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -911,7 +927,7 @@
     <item>
       <title>Midnight Metal Monastery #152</title>
       <link>https://archive.org/details/mmm-152</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-152/MMM%20152.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -920,7 +936,7 @@
     <item>
       <title>Midnight Metal Monastery #151</title>
       <link>https://archive.org/details/mmm-151</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 10 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-151/MMM%20151.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -929,7 +945,7 @@
     <item>
       <title>Midnight Metal Monastery #150</title>
       <link>https://archive.org/details/mmm-150</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-150/MMM%20150.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -938,7 +954,7 @@
     <item>
       <title>Midnight Metal Monastery #149</title>
       <link>https://archive.org/details/mmm-149</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 19 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-149/MMM%20149.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -947,7 +963,7 @@
     <item>
       <title>Midnight Metal Monastery #148</title>
       <link>https://archive.org/details/mmm-148</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 12 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-148/MMM%20148.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -956,7 +972,7 @@
     <item>
       <title>Midnight Metal Monastery #147</title>
       <link>https://archive.org/details/mmm-147</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-147/MMM%20147.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -965,7 +981,7 @@
     <item>
       <title>Midnight Metal Monastery #146</title>
       <link>https://archive.org/details/mmm-146</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 29 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-146/MMM%20146.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -974,7 +990,7 @@
     <item>
       <title>Midnight Metal Monastery #145</title>
       <link>https://archive.org/details/mmm-145</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 22 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-145/MMM%20145.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -983,7 +999,7 @@
     <item>
       <title>Midnight Metal Monastery #144</title>
       <link>https://archive.org/details/mmm-144</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-144/MMM%20144.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -992,7 +1008,7 @@
     <item>
       <title>Midnight Metal Monastery #143</title>
       <link>https://archive.org/details/mmm-143</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 08 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-143/MMM%20143.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1001,7 +1017,7 @@
     <item>
       <title>Midnight Metal Monastery #142</title>
       <link>https://archive.org/details/mmm-142</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-142/MMM%20142.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1010,7 +1026,7 @@
     <item>
       <title>Midnight Metal Monastery #141</title>
       <link>https://archive.org/details/mmm-141</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Wed, 26 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-141/MMM%20141.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1019,7 +1035,7 @@
     <item>
       <title>Midnight Metal Monastery #140</title>
       <link>https://archive.org/details/mmm-140</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-140/MMM%20140.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1028,7 +1044,7 @@
     <item>
       <title>Midnight Metal Monastery #139</title>
       <link>https://archive.org/details/mmm-139</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 11 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-139/MMM%20139.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1037,7 +1053,7 @@
     <item>
       <title>Midnight Metal Monastery #138</title>
       <link>https://archive.org/details/mmm-138</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-138/MMM%20138.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1046,7 +1062,7 @@
     <item>
       <title>Midnight Metal Monastery #137</title>
       <link>https://archive.org/details/mmm-137</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-137/MMM%20137.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1055,7 +1071,7 @@
     <item>
       <title>Midnight Metal Monastery #136</title>
       <link>https://archive.org/details/mmm-136</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-136/MMM%20136.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1064,7 +1080,7 @@
     <item>
       <title>Midnight Metal Monastery #135</title>
       <link>https://archive.org/details/mmm-135</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-135/MMM%20135.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1073,7 +1089,7 @@
     <item>
       <title>Midnight Metal Monastery #134</title>
       <link>https://archive.org/details/mmm-134</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-134/MMM%20134.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1082,7 +1098,7 @@
     <item>
       <title>Midnight Metal Monastery #133</title>
       <link>https://archive.org/details/mmm-133</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-133/MMM%20133.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1091,7 +1107,7 @@
     <item>
       <title>Midnight Metal Monastery #132</title>
       <link>https://archive.org/details/mmm-132</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-132/MMM%20132.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1100,7 +1116,7 @@
     <item>
       <title>Midnight Metal Monastery #131</title>
       <link>https://archive.org/details/mmm-131</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-131/MMM%20131.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1109,7 +1125,7 @@
     <item>
       <title>Midnight Metal Monastery #130</title>
       <link>https://archive.org/details/mmm-130</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 09 May 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-130/MMM%20130.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1118,7 +1134,7 @@
     <item>
       <title>Midnight Metal Monastery #129</title>
       <link>https://archive.org/details/mmm-129</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-129/MMM%20129.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1127,7 +1143,7 @@
     <item>
       <title>Midnight Metal Monastery #128</title>
       <link>https://archive.org/details/mmm-128</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 25 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-128/MMM%20128.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1136,7 +1152,7 @@
     <item>
       <title>Midnight Metal Monastery #127</title>
       <link>https://archive.org/details/mmm-127</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-127/MMM%20127.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1145,7 +1161,7 @@
     <item>
       <title>Midnight Metal Monastery #126</title>
       <link>https://archive.org/details/mmm-126</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 11 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-126/MMM%20126.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1154,7 +1170,7 @@
     <item>
       <title>Midnight Metal Monastery #125</title>
       <link>https://archive.org/details/mmm-125</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-125/MMM%20125.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1163,7 +1179,7 @@
     <item>
       <title>Midnight Metal Monastery #124</title>
       <link>https://archive.org/details/mmm-124</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 28 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-124/MMM%20124.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1172,7 +1188,7 @@
     <item>
       <title>Midnight Metal Monastery #123</title>
       <link>https://archive.org/details/mmm-123</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 21 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-123/MMM%20123.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1181,7 +1197,7 @@
     <item>
       <title>Midnight Metal Monastery #122</title>
       <link>https://archive.org/details/mmm-122</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-122/MMM%20122.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1190,7 +1206,7 @@
     <item>
       <title>Midnight Metal Monastery #121</title>
       <link>https://archive.org/details/mmm-121</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-121/MMM%20121.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1199,7 +1215,7 @@
     <item>
       <title>Midnight Metal Monastery #120</title>
       <link>https://archive.org/details/mmm-120</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 21 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-120/MMM%20120.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1208,7 +1224,7 @@
     <item>
       <title>Midnight Metal Monastery #119</title>
       <link>https://archive.org/details/mmm-119</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-119/MMM%20119.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1217,7 +1233,7 @@
     <item>
       <title>Midnight Metal Monastery #118</title>
       <link>https://archive.org/details/mmm-118</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 07 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-118/MMM%20118.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1226,7 +1242,7 @@
     <item>
       <title>Midnight Metal Monastery #117</title>
       <link>https://archive.org/details/mmm-117</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-117/MMM%20117.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1235,7 +1251,7 @@
     <item>
       <title>Midnight Metal Monastery #116</title>
       <link>https://archive.org/details/mmm-116</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-116/MMM%20116.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1244,7 +1260,7 @@
     <item>
       <title>Midnight Metal Monastery #115</title>
       <link>https://archive.org/details/mmm-115</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 17 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-115/MMM%20115.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1253,7 +1269,7 @@
     <item>
       <title>Midnight Metal Monastery #114</title>
       <link>https://archive.org/details/mmm-114</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-114/MMM%20114.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1262,7 +1278,7 @@
     <item>
       <title>Midnight Metal Monastery #113</title>
       <link>https://archive.org/details/mmm-113</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-113/MMM%20113.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1271,7 +1287,7 @@
     <item>
       <title>Midnight Metal Monastery #112</title>
       <link>https://archive.org/details/mmm-112</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-112/MMM%20112.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1280,7 +1296,7 @@
     <item>
       <title>Midnight Metal Monastery #111</title>
       <link>https://archive.org/details/mmm-111</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-111/MMM%20111.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1289,7 +1305,7 @@
     <item>
       <title>Midnight Metal Monastery #110</title>
       <link>https://archive.org/details/mmm-110</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-110/MMM%20110.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1298,7 +1314,7 @@
     <item>
       <title>Midnight Metal Monastery #109</title>
       <link>https://archive.org/details/mmm-109</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 06 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-109/MMM%20109.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1307,7 +1323,7 @@
     <item>
       <title>Midnight Metal Monstery #108</title>
       <link>https://archive.org/details/mmm-108</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-108/MMM%20108.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1316,7 +1332,7 @@
     <item>
       <title>Midnight Metal Monastery #107</title>
       <link>https://archive.org/details/mmm-107</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-107/MMM%20107.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1325,7 +1341,7 @@
     <item>
       <title>Midnight Metal Monastery #106</title>
       <link>https://archive.org/details/mmm-106</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 15 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-106/MMM%20106.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1334,7 +1350,7 @@
     <item>
       <title>Midnight Metal Monastery #105</title>
       <link>https://archive.org/details/mmm-105</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 08 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-105/MMM%20105.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1343,7 +1359,7 @@
     <item>
       <title>Midnight Metal Monastery #104</title>
       <link>https://archive.org/details/mmm-104</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-104/MMM%20104.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1352,7 +1368,7 @@
     <item>
       <title>Midnight Metal Monastery #103</title>
       <link>https://archive.org/details/mmm-103</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-103/MMM%20103.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1361,7 +1377,7 @@
     <item>
       <title>Midnight Metal Monastery #102</title>
       <link>https://archive.org/details/mmm-102</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-102/MMM%20102.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1370,7 +1386,7 @@
     <item>
       <title>Midnight Metal Monastery #101</title>
       <link>https://archive.org/details/mmm-101</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-101/MMM%20101.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1379,7 +1395,7 @@
     <item>
       <title>Midnight Metal Monastery #100</title>
       <link>https://archive.org/details/mmm-100</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 04 Oct 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-100/MMM%20100.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1388,7 +1404,7 @@
     <item>
       <title>Midnight Metal Monastery #99</title>
       <link>https://archive.org/details/mmm-99</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 27 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-99/MMM%2099.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1397,7 +1413,7 @@
     <item>
       <title>Midnight Metal Monastery #98</title>
       <link>https://archive.org/details/mmm-98</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-98/MMM%2098.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1406,7 +1422,7 @@
     <item>
       <title>Midnight Metal Monastery #97</title>
       <link>https://archive.org/details/mmm-97</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 13 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-97/MMM%2097.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1415,7 +1431,7 @@
     <item>
       <title>Midnight Metal Monastery #96</title>
       <link>https://archive.org/details/mmm-96</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Sun, 04 Sep 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-96/MMM%2096.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1424,7 +1440,7 @@
     <item>
       <title>Midnight Metal Monastery #95</title>
       <link>https://archive.org/details/mmm-95</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 30 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-95/MMM%2095.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1433,7 +1449,7 @@
     <item>
       <title>Midnight Metal Monastery #94</title>
       <link>https://archive.org/details/mmm-94</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 23 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-94/MMM%2094.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1442,7 +1458,7 @@
     <item>
       <title>Midnight Metal Monastery #93</title>
       <link>https://archive.org/details/mmm-93</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-93/MMM%2093.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1451,7 +1467,7 @@
     <item>
       <title>Midnight Metal Monastery #92</title>
       <link>https://archive.org/details/mmm-92</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 09 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-92/MMM%2092.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1460,7 +1476,7 @@
     <item>
       <title>Midnight Metal Monastery #91</title>
       <link>https://archive.org/details/mmm-91</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 02 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-91/MMM%2091.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1469,7 +1485,7 @@
     <item>
       <title>Midnight Metal Monastery #90</title>
       <link>https://archive.org/details/mmm-90</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-90/MMM%2090.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1478,7 +1494,7 @@
     <item>
       <title>Midnight Metal Monastery #89</title>
       <link>https://archive.org/details/mmm-89</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 19 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-89/MMM%2089.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1487,7 +1503,7 @@
     <item>
       <title>Midnight Metal Monastery #88</title>
       <link>https://archive.org/details/mmm-88</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-88/MMM%2088.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1496,7 +1512,7 @@
     <item>
       <title>Midnight Metal Monastery #87</title>
       <link>https://archive.org/details/mmm-87</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-87/MMM%2087.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1505,7 +1521,7 @@
     <item>
       <title>Midnight Metal Monastery #86</title>
       <link>https://archive.org/details/mmm-86</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-86/MMM%2086.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1514,7 +1530,7 @@
     <item>
       <title>Midnight Metal Monastery #85</title>
       <link>https://archive.org/details/mmm-85</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 21 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-85/MMM%2085.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1523,7 +1539,7 @@
     <item>
       <title>Midnight Metal Monastery #84</title>
       <link>https://archive.org/details/mmm-84</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-84/MMM%2084.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1532,7 +1548,7 @@
     <item>
       <title>Midnight Metal Monastery #83</title>
       <link>https://archive.org/details/mmm-83</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 07 Jun 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-83/MMM%2083.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1541,7 +1557,7 @@
     <item>
       <title>Midnight Metal Monastery #82</title>
       <link>https://archive.org/details/mmm-82</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-82/MMM%2082.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1550,7 +1566,7 @@
     <item>
       <title>Midnight Metal Monastery #81</title>
       <link>https://archive.org/details/mmm-81</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 24 May 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-81/MMM%2081.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1559,7 +1575,7 @@
     <item>
       <title>Midnight Metal Monastery #80</title>
       <link>https://archive.org/details/mmm-80</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-80/MMM%2080.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1568,7 +1584,7 @@
     <item>
       <title>Midnight Metal Monastery #79</title>
       <link>https://archive.org/details/mmm-79</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-79/MMM%2079.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1577,7 +1593,7 @@
     <item>
       <title>Midnight Metal Monastery #78</title>
       <link>https://archive.org/details/mmm-78</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 03 May 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-78/MMM%2078.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1586,7 +1602,7 @@
     <item>
       <title>Midnight Metal Monastery #77</title>
       <link>https://archive.org/details/mmm-77</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-77/MMM%2077.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1595,7 +1611,7 @@
     <item>
       <title>Midnight Metal Monastery #76</title>
       <link>https://archive.org/details/mmm-76</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-76/MMM%2076.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1604,7 +1620,7 @@
     <item>
       <title>Midnight Metal Monastery #75</title>
       <link>https://archive.org/details/mmm-75</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-75/MMM%2075.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1613,7 +1629,7 @@
     <item>
       <title>Midnight Metal Monastery #74</title>
       <link>https://archive.org/details/mmm-74</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-74/MMM%2074.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1622,7 +1638,7 @@
     <item>
       <title>Midnight Metal Monastery #73</title>
       <link>https://archive.org/details/mmm-73</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-73/MMM%2073.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1631,7 +1647,7 @@
     <item>
       <title>Midnight Metal Monastery #72</title>
       <link>https://archive.org/details/mmm-72</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-72/MMM%2072.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1640,7 +1656,7 @@
     <item>
       <title>Midnight Metal Monastery #71</title>
       <link>https://archive.org/details/mmm-71</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-71/MMM%2071.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1649,7 +1665,7 @@
     <item>
       <title>Midnight Metal Monastery #70</title>
       <link>https://archive.org/details/mmm-70</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-70/MMM%2070.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1658,7 +1674,7 @@
     <item>
       <title>Midnight Metal Monastery #69</title>
       <link>https://archive.org/details/mmm-69</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-69/MMM%2069.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1667,7 +1683,7 @@
     <item>
       <title>Midnight Metal Monastery #68</title>
       <link>https://archive.org/details/mmm-68</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-68/MMM%2068.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1676,7 +1692,7 @@
     <item>
       <title>Midnight Metal Monastery #67</title>
       <link>https://archive.org/details/mmm-67</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 15 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-67/MMM%2067.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1685,7 +1701,7 @@
     <item>
       <title>Midnight Metal Monastery #66</title>
       <link>https://archive.org/details/mmm-66</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 08 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-66/MMM%2066.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1694,7 +1710,7 @@
     <item>
       <title>Midnight Metal Monastery #65</title>
       <link>https://archive.org/details/mmm-65</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Sat, 29 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-65/MMM%2065.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1703,7 +1719,7 @@
     <item>
       <title>Midnight Metal Monastery #64</title>
       <link>https://archive.org/details/mmm-64</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-64/MMM%2064.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1712,7 +1728,7 @@
     <item>
       <title>Midnight Metal Monastery #63</title>
       <link>https://archive.org/details/mmm-63</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 18 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-63/MMM%2063.mp3</guid>
       <itunes:author>inspired by the Holy Spirir</itunes:author>
@@ -1721,7 +1737,7 @@
     <item>
       <title>Midnight Metal Monastery #62</title>
       <link>https://archive.org/details/mmm-62</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-62/MMM%2062.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1730,7 +1746,7 @@
     <item>
       <title>Midnight Metal Monastery #61</title>
       <link>https://archive.org/details/mmm-61</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-61/MMM%2061.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1739,7 +1755,7 @@
     <item>
       <title>Midnight Metal Monastery #60</title>
       <link>https://archive.org/details/mmm-60</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-60/MMM%2060.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1748,7 +1764,7 @@
     <item>
       <title>Midnight Metal Monastery #59</title>
       <link>https://archive.org/details/mmm-59</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-59/MMM%2059.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1757,7 +1773,7 @@
     <item>
       <title>Midnight Metal Monastery #58</title>
       <link>https://archive.org/details/mmm-58</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-58/MMM%2058.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1766,7 +1782,7 @@
     <item>
       <title>Midnight Metal Monastery #57</title>
       <link>https://archive.org/details/mmm-57</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-57/MMM%2057.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1775,7 +1791,7 @@
     <item>
       <title>Midnight Metal Monastery #56</title>
       <link>https://archive.org/details/mmm-56</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-56/MMM%2056.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1784,7 +1800,7 @@
     <item>
       <title>Midnight Metal Monastery #55</title>
       <link>https://archive.org/details/mmm-55</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 23 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-55/MMM%2055.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1793,7 +1809,7 @@
     <item>
       <title>Midnight Metal Monastery #54</title>
       <link>https://archive.org/details/mmm-54</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 16 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-54/MMM%2054.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
@@ -1802,7 +1818,7 @@
     <item>
       <title>Midnight Metal Monastery #53</title>
       <link>https://archive.org/details/mmm-53</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God.</description>
       <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://archive.org/download/mmm-53/MMM%2053.mp3</guid>
       <itunes:author>inspired by the Holy Spirit</itunes:author>
