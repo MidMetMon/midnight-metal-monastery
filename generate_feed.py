@@ -9,10 +9,10 @@ from urllib.parse import quote
 # Configuration - EDIT THESE
 COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org collection ID
 PODCAST_TITLE = "Midnight Metal Monastery"
-PODCAST_DESCRIPTION = "Christian Rock and Metal Podcast"
-PODCAST_AUTHOR = "inspired by the Holy Spirit"
-PODCAST_IMAGE_URL = "https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"  # URL to a square image (3000x3000 or smaller)
-PODCAST_LINK = "https://MidMetMon.github.io/midnight-metal-monastery"  # Link to your promotion website
+PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast."
+PODCAST_AUTHOR = "David Larry Carroll, Abbot and Andrew C. Schlett, First Prior"
+PODCAST_IMAGE_URL = "https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"  # URL to a square image (3000x3000 or smaller)
+PODCAST_LINK = "www.midnightmetalmonastery.com"  # Link to your promotion website
 
 def get_collection_items():
     """Fetch items from Archive.org collection via API"""
@@ -115,7 +115,7 @@ def generate_rss_feed():
     for item in items:
         item_id = item.get("identifier", "")
         title = item.get("title", "Unknown")
-        description = item.get("description", "")
+        description = PODCAST_DESCRIPTION
         pub_date = item.get("date", "")
         creator = item.get("creator", PODCAST_AUTHOR)
         
@@ -134,7 +134,7 @@ def generate_rss_feed():
             item_elem = SubElement(channel, "item")
             SubElement(item_elem, "title").text = title
             SubElement(item_elem, "link").text = f"https://archive.org/details/{item_id}"
-            SubElement(item_elem, "description").text = description or title
+            SubElement(item_elem, "description").text = description
             SubElement(item_elem, "pubDate").text = parse_date(pub_date)
             SubElement(item_elem, "guid").text = download_url
             
