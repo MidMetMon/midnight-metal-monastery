@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import requests
+import re
 from datetime import datetime, timezone
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
@@ -9,11 +10,11 @@ from urllib.parse import quote
 # Configuration - EDIT THESE
 COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org collection ID
 PODCAST_TITLE = "Midnight Metal Monastery"
-PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God."
+PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast."
 PODCAST_AUTHOR = "David Larry Carroll, Abbot and Andrew C. Schlett, First Prior"
 PODCAST_IMAGE_URL = "https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"  # URL to a square image (3000x3000 or smaller)
 PODCAST_LINK = "https://www.midnightmetalmonastery.com"  # Link to your promotion website (updated to https)
-PODCAST_EMAIL = "contact@midnightmetalmonastery.com"  # Replace with your contact email
+PODCAST_EMAIL = "YOUR_EMAIL_HERE"  # Replace with your contact email
 PODCAST_SUBTITLE = "Christian Rock and Metal Podcast"
 PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
 
@@ -136,12 +137,15 @@ def generate_rss_feed():
     
     # Add items (episodes)
     episode_count = 0
+    episode_counter = 1  # fallback counter if no number parsed from title
+
     for item in items:
         item_id = item.get("identifier", "")
         title = item.get("title", "Unknown")
         # Use static description for episodes (does not pull from archive)
         description = PODCAST_DESCRIPTION
         pub_date = item.get("date", "")
+        # Use static author for each episode
         creator = PODCAST_AUTHOR
         
         # Get audio files for this item
@@ -166,6 +170,18 @@ def generate_rss_feed():
             # iTunes metadata
             itunes_author_item = SubElement(item_elem, "itunes:author")
             itunes_author_item.text = creator
+
+            # Determine episode number from title (parse "#123") or fallback to counter
+            m = re.search(r"#\s*(\d+)", title)
+            if m:
+                episode_num = m.group(1)
+            else:
+                episode_num = str(episode_counter)
+            
+            ep = SubElement(item_elem, "itunes:episode")
+            ep.text = str(episode_num)
+            ep_type = SubElement(item_elem, "itunes:episodeType")
+            ep_type.text = "full"
             
             # Audio enclosure
             enclosure = SubElement(item_elem, "enclosure")
@@ -174,6 +190,9 @@ def generate_rss_feed():
             enclosure.set("length", str(file_size))
             
             episode_count += 1
+            # increment fallback counter only when used (keeps parsed numbers unaffected)
+            if not m:
+                episode_counter += 1
     
     print(f"Generated {episode_count} episodes from {len(items)} items")
     
