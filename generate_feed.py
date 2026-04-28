@@ -12,7 +12,10 @@ PODCAST_TITLE = "Midnight Metal Monastery"
 PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast."
 PODCAST_AUTHOR = "David Larry Carroll, Abbot and Andrew C. Schlett, First Prior"
 PODCAST_IMAGE_URL = "https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"  # URL to a square image (3000x3000 or smaller)
-PODCAST_LINK = "www.midnightmetalmonastery.com"  # Link to your promotion website
+PODCAST_LINK = "https://www.midnightmetalmonastery.com"  # Link to your promotion website (updated to https)
+PODCAST_EMAIL = "YOUR_EMAIL_HERE"  # Replace with your contact email
+PODCAST_SUBTITLE = "Christian Rock and Metal Podcast"
+PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
 
 def get_collection_items():
     """Fetch items from Archive.org collection via API"""
@@ -93,15 +96,23 @@ def generate_rss_feed():
     SubElement(channel, "language").text = "en-us"
     SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     SubElement(channel, "ttl").text = "3600"  # Update every hour
-    
+
     # iTunes-specific metadata
     itunes_author = SubElement(channel, "itunes:author")
     itunes_author.text = PODCAST_AUTHOR
-    
+
+    # itunes:subtitle
+    itunes_subtitle = SubElement(channel, "itunes:subtitle")
+    itunes_subtitle.text = PODCAST_SUBTITLE
+
+    # itunes:owner with email
     itunes_owner = SubElement(channel, "itunes:owner")
     owner_name = SubElement(itunes_owner, "itunes:name")
     owner_name.text = PODCAST_AUTHOR
-    
+    owner_email = SubElement(itunes_owner, "itunes:email")
+    owner_email.text = PODCAST_EMAIL
+
+    # itunes:image
     itunes_image = SubElement(channel, "itunes:image")
     itunes_image.set("href", PODCAST_IMAGE_URL)
     
@@ -109,12 +120,26 @@ def generate_rss_feed():
     SubElement(image, "url").text = PODCAST_IMAGE_URL
     SubElement(image, "title").text = PODCAST_TITLE
     SubElement(image, "link").text = PODCAST_LINK
+
+    # itunes:category Religion & Spirituality > Christianity
+    itunes_cat_parent = SubElement(channel, "itunes:category")
+    itunes_cat_parent.set("text", "Religion & Spirituality")
+    itunes_cat_child = SubElement(itunes_cat_parent, "itunes:category")
+    itunes_cat_child.set("text", "Christianity")
+
+    # itunes:explicit
+    itunes_explicit = SubElement(channel, "itunes:explicit")
+    itunes_explicit.text = "no"
+
+    # copyright
+    SubElement(channel, "copyright").text = PODCAST_COPYRIGHT
     
     # Add items (episodes)
     episode_count = 0
     for item in items:
         item_id = item.get("identifier", "")
         title = item.get("title", "Unknown")
+        # Use static description for episodes (does not pull from archive)
         description = PODCAST_DESCRIPTION
         pub_date = item.get("date", "")
         creator = item.get("creator", PODCAST_AUTHOR)
@@ -134,7 +159,7 @@ def generate_rss_feed():
             item_elem = SubElement(channel, "item")
             SubElement(item_elem, "title").text = title
             SubElement(item_elem, "link").text = f"https://archive.org/details/{item_id}"
-            SubElement(item_elem, "description").text = description
+            SubElement(item_elem, "description").text = description or title
             SubElement(item_elem, "pubDate").text = parse_date(pub_date)
             SubElement(item_elem, "guid").text = download_url
             
