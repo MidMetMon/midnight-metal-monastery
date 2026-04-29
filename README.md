@@ -1,2 +1,2 @@
 A Christian Rock and Metal podcast.
-We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.
+Midnight Metal Monastery is where faith meets fury. A sanctuary for those seeking spiritual depth and heavy riffs. Lifting high the name of Jesus Christ through powerful music &amp; Scripture. We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb and serving the Almighty God. Slay the Beast and live!
