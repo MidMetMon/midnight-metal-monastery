@@ -23,6 +23,12 @@ PODCAST_EMAIL = "contact@midnightmetalmonastery.com"  # Replace with your contac
 PODCAST_SUBTITLE = "Christian Rock and Metal Podcast"
 PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
 
+# Episode summary template - customize as you like
+EPISODE_SUMMARY_TEMPLATE = (
+    "The bells ring, the amps roar, and the Warrior Monks gather again for episode {episode_number}. "
+    "Enter the Midnight Metal Monastery and raise a banner against the bow!"
+)
+
 def get_collection_items():
     """Fetch items from Archive.org collection via API"""
     url = "https://archive.org/advancedsearch.php"
@@ -211,6 +217,11 @@ def generate_rss_feed():
             ep.text = str(episode_num)
             ep_type = SubElement(item_elem, "itunes:episodeType")
             ep_type.text = "full"
+
+            # Generate dynamic episode summary
+            episode_summary = EPISODE_SUMMARY_TEMPLATE.format(episode_number=episode_num)
+            itunes_summary_item = SubElement(item_elem, "itunes:summary")
+            itunes_summary_item.text = episode_summary
 
             # Add itunes:duration if available (format H:MM:SS or M:SS)
             dur_text = format_duration(duration_seconds)
