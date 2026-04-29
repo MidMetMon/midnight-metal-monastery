@@ -12,9 +12,7 @@ COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org coll
 PODCAST_TITLE = "Midnight Metal Monastery"
 PODCAST_DESCRIPTION = "We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast."
 PODCAST_ITUNES_SUMMARY = (
-    "Midnight Metal Monastery is where faith meets fury. A sanctuary for those seeking spiritual depth and heavy riffs. Lifting high the name of "
-    "Jesus Christ through powerful music & Scripture. We are the Warrior Monks of Christian Rock—slamming "
-    "the jams that worship the Lamb and serving the Almighty God. Slay the Beast and live!"
+    "Midnight Metal Monastery is where faith meets fury. A sanctuary for listeners seeking spiritual depth and heavy riffs. We lift high the name of Jesus Christ through powerful music and Scripture. We are the Warrior Monks of Christian Rock, slamming the jams that worship the Lamb and serving the Almighty God. Slay the Beast and live."
 )
 PODCAST_AUTHOR = "David Larry Carroll, Abbot and Andrew C. Schlett, First Prior"
 PODCAST_IMAGE_URL = "https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"
@@ -25,8 +23,7 @@ PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
 
 # Episode summary template - customize as you like
 EPISODE_SUMMARY_TEMPLATE = (
-    "The bells ring, the amps roar, and the Warrior Monks gather again for episode {episode_number}. "
-    "Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!"
+    "The bells ring, the amps roar, and the Warrior Monks gather again for episode {episode_number}. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell."
 )
 
 def get_collection_items():
