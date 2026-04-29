@@ -26,7 +26,7 @@ PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
 # Episode summary template - customize as you like
 EPISODE_SUMMARY_TEMPLATE = (
     "The bells ring, the amps roar, and the Warrior Monks gather again for episode {episode_number}. "
-    "Enter the Midnight Metal Monastery and raise a banner against the bow!"
+    "Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!"
 )
 
 def get_collection_items():
