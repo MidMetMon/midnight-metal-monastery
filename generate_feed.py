@@ -165,6 +165,9 @@ def generate_rss_feed():
     itunes_explicit = SubElement(channel, "itunes:explicit")
     itunes_explicit.text = "no"
 
+    itunes_type = SubElement(channel, "itunes:type")
+    itunes_type.text = "episodic"
+
     SubElement(channel, "copyright").text = PODCAST_COPYRIGHT
 
     # Episodes
