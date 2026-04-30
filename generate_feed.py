@@ -132,7 +132,9 @@ def generate_rss_feed():
     SubElement(channel, "link").text = PODCAST_LINK
     SubElement(channel, "description").text = PODCAST_DESCRIPTION
     SubElement(channel, "language").text = "en-us"
-    SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    from datetime import datetime, timezone, timedelta
+    safe_time = datetime.now(timezone.utc) - timedelta(minutes=5)
+    SubElement(channel, "lastBuildDate").text = safe_time.strftime("%a, %d %b %Y %H:%M:%S +0000")
     SubElement(channel, "ttl").text = "3600"
 
     # iTunes-specific metadata
