@@ -248,8 +248,16 @@ def main():
     print("Generating podcast RSS feed...")
     feed_xml = generate_rss_feed()
     if feed_xml:
-        with open("podcast.rss", "w", encoding="utf-8") as f:
-            f.write(feed_xml)
+        import os
+
+temp_file = "podcast.rss.tmp"
+final_file = "podcast.rss"
+
+with open(temp_file, "w", encoding="utf-8") as f:
+    f.write(feed_xml)
+
+os.replace(temp_file, final_file)
+
         print("✓ Feed saved to podcast.rss")
     else:
         print("✗ Failed to generate feed")
