@@ -6,7 +6,6 @@ from datetime import datetime, timezone
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom import minidom
 from urllib.parse import quote
-import os
 
 # Configuration - EDIT THESE
 COLLECTION_ID = "midnight-metal-monastery"  # Replace with your Archive.org collection ID
@@ -250,13 +249,8 @@ def main():
     feed_xml = generate_rss_feed()
     if feed_xml:
 
-temp_file = "podcast.rss.tmp"
-final_file = "podcast.rss"
-
-with open(temp_file, "w", encoding="utf-8") as f:
+with open("podcast.rss", "w", encoding="utf-8") as f:
     f.write(feed_xml)
-
-os.replace(temp_file, final_file)
 
         print("✓ Feed saved to podcast.rss")
     else:
