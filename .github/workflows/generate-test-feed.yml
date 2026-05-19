@@ -1,4 +1,4 @@
-name: Generate Podcast Feed
+name: Generate Test Podcast Feed
 
 on:
   schedule:
