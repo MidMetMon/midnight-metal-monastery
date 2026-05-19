@@ -1,0 +1,24 @@
+name: Python script
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0  # Fetch the entire repository history
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        pip install requests xmltodict urllib3
+
+    - name: Run script
+      run: python3 TEST_generate_feed.py
