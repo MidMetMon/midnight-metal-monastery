@@ -276,7 +276,7 @@ def main():
     if feed_xml:
         with open("podcast_test.rss", "w", encoding="utf-8") as f:
             f.write(feed_xml)
-        print("✓ Feed saved to podcast.rss")
+        print("✓ Feed saved to podcast_test.rss")
     else:
         print("✗ Failed to generate feed")
 
