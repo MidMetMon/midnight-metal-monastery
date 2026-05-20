@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3#!/usr/bin/env python3
 import json
 import requests
 import re
@@ -20,6 +20,8 @@ PODCAST_LINK = "https://www.midnightmetalmonastery.com"
 PODCAST_EMAIL = "contact@midnightmetalmonastery.com"  # Replace with your contact email
 PODCAST_SUBTITLE = "Christian Rock and Metal Podcast"
 PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
+
+# Episode summary template - customize as you like
 EPISODE_SUMMARY_TEMPLATE = (
     "The bells ring, the amps roar, and the Warrior Monks gather again for episode {episode_number}. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!"
 )
@@ -63,26 +65,54 @@ def _parse_duration_value(v):
         return int(secs)
     return None
 
-def get_audio_and_artwork_files(item_id):
-    """Get audio files and artwork for an item (including size, possible duration metadata, and artwork URL)"""
+def get_audio_files(item_id):
+    """Get audio files for an item (including size and possible duration metadata)"""
     url = f"https://archive.org/metadata/{item_id}"
     try:
         response = requests.get(url, timeout=10)
         response.raise_for_status()
         data = response.json()
         audio_files = []
-        artwork_url = None
         for file_info in data.get("files", []):
             filename = file_info.get("name", "")
             if filename.lower().endswith((".mp3", ".m4a", ".ogg", ".flac", ".wav")):
-                # ... (existing code)
-            elif filename.lower().endswith(".jpg") or filename.lower().endswith(".jpeg") or filename.lower().endswith(".png"):
-                artwork_url = f"https://archive.org/{item_id}/{quote(filename, safe='')}"
-            # ... (remaining existing code)
-        return audio_files, artwork_url
+                duration_seconds = None
+                # check many possible keys
+                for key in ("length", "playtime", "duration", "play_length", "tracklength", "time"):
+                    if key in file_info:
+                        duration_seconds = _parse_duration_value(file_info.get(key))
+                        if duration_seconds is not None:
+                            break
+                
+                audio_files.append({
+                    "name": filename,
+                    "size": file_info.get("size", 0),
+                    "format": file_info.get("format", ""),
+                    "duration": duration_seconds
+                })
+        return audio_files
     except Exception as e:
         print(f"Error fetching files for {item_id}: {e}")
-        return [], None
+        return []
+
+def parse_date(date_str):
+    """Parse Archive.org date format to RFC 2822"""
+    try:
+        dt = datetime.strptime(date_str[:10], "%Y-%m-%d")
+        return dt.strftime("%a, %d %b %Y 00:00:00 +0000")
+    except:
+        return datetime.now().strftime("%a, %d %b %Y 00:00:00 +0000")
+
+def format_duration(seconds):
+    """Format seconds to H:MM:SS or M:SS as Apple expects"""
+    if not seconds or seconds <= 0:
+        return None
+    hours, rem = divmod(int(seconds), 3600)
+    minutes, secs = divmod(rem, 60)
+    if hours:
+        return f"{hours}:{minutes:02d}:{secs:02d}"
+    else:
+        return f"{minutes}:{secs:02d}"
 
 def generate_rss_feed():
     items = get_collection_items()
@@ -114,7 +144,7 @@ def generate_rss_feed():
     itunes_subtitle = SubElement(channel, "itunes:subtitle")
     itunes_subtitle.text = PODCAST_SUBTITLE
 
-    # Add iTunes summary (channel level)
+    # Add itunes:summary (channel level)
     itunes_summary = SubElement(channel, "itunes:summary")
     itunes_summary.text = PODCAST_ITUNES_SUMMARY
 
@@ -156,7 +186,7 @@ def generate_rss_feed():
         pub_date = item.get("date", "")
         creator = PODCAST_AUTHOR
 
-        audio_files, artwork_url = get_audio_and_artwork_files(item_id)
+        audio_files = get_audio_files(item_id)
         for audio_file in audio_files:
             filename = audio_file["name"]
             file_size = audio_file["size"]
@@ -204,24 +234,25 @@ def generate_rss_feed():
             enclosure.set("type", "audio/mpeg")
             enclosure.set("length", str(file_size))
 
-            if artwork_url:
-                episode_artwork = SubElement(item_elem, "itunes:image")
-                episode_artwork.set("href", artwork_url)
-
             episode_count += 1
             if not m:
                 episode_counter += 1
 
     print(f"Generated {episode_count} episodes from {len(items)} items")
 
+    rough_string = tostring(rss, encoding='unicode')
+    reparsed = minidom.parseString(rough_string)
+    return reparsed.toprettyxml(indent="  ")
+
 def main():
     print("Generating podcast RSS feed...")
     feed_xml = generate_rss_feed()
     if feed_xml:
-        with open("podcast_test.rss", "w", encoding="utf-8") as f:
+        with open("podcast.rss", "w", encoding="utf-8") as f:
             f.write(feed_xml)
         print("✓ Feed saved to podcast.rss")
     else:
         print("✗ Failed to generate feed")
+
 if __name__ == "__main__":
     main()
