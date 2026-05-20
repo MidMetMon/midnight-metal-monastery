@@ -1,4 +1,4 @@
-#!/usr/bin/env python3#!/usr/bin/env python3
+#!/usr/bin/env python3
 import json
 import requests
 import re
@@ -44,6 +44,26 @@ def get_collection_items():
     except Exception as e:
         print(f"Error fetching collection: {e}")
         return []
+
+# ===== ADDITION: NEW FUNCTION TO GET EPISODE IMAGE =====
+def get_item_image_url(item_id):
+    """
+    Get image URL for an Archive.org item.
+    Returns Archive.org thumbnail URL, or falls back to podcast image.
+    """
+    try:
+        # Archive.org provides item thumbnails via this standard URL pattern
+        image_url = f"https://archive.org/services/img/{item_id}"
+        # Quick validation - make a HEAD request to verify the image exists
+        response = requests.head(image_url, timeout=5)
+        if response.status_code == 200:
+            return image_url
+    except Exception as e:
+        print(f"Warning: Could not fetch image for {item_id}: {e}")
+    
+    # Fall back to podcast-level image if item image unavailable
+    return PODCAST_IMAGE_URL
+# ===== END ADDITION =====
 
 def _parse_duration_value(v):
     """Parse duration value from various formats (string seconds, HH:MM:SS, MM:SS, etc.)"""
@@ -228,6 +248,12 @@ def generate_rss_feed():
                 itunes_duration = SubElement(item_elem, "itunes:duration")
                 itunes_duration.text = dur_text
 
+            # ===== ADDITION: ADD EPISODE ARTWORK =====
+            episode_image_url = get_item_image_url(item_id)
+            itunes_image_item = SubElement(item_elem, "itunes:image")
+            itunes_image_item.set("href", episode_image_url)
+            # ===== END ADDITION =====
+
             # Audio enclosure
             enclosure = SubElement(item_elem, "enclosure")
             enclosure.set("url", download_url)
@@ -248,7 +274,7 @@ def main():
     print("Generating podcast RSS feed...")
     feed_xml = generate_rss_feed()
     if feed_xml:
-        with open("podcast.rss", "w", encoding="utf-8") as f:
+        with open("podcast_test.rss", "w", encoding="utf-8") as f:
             f.write(feed_xml)
         print("✓ Feed saved to podcast.rss")
     else:
