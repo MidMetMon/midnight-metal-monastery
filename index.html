@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for proper text rendering -->
     <meta charset="UTF-8">
+    <!-- Responsive viewport settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midnight Metal Monastery</title>
 
+    <!-- External Google Font: 'Special Elite' used for h1 and .subtitle elements -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
+    /* Reset all default margins, padding, and box-sizing */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
+    /* Styling for all <a> links (used in navigation links in subtitle divs) */
     a { color: #ffffff; text-decoration: none; }
     a:hover {
         text-decoration: underline;
         text-decoration-thickness: 3px;
     }
 
+    /* Body background and text color - dark theme */
     body {
         font-family: Arial, sans-serif;
         background: #000;
@@ -26,6 +32,7 @@
         overflow: hidden;
     }
 
+    /* Main container: flexbox layout that fills entire viewport */
     .container {
         position: relative;
         width: 100vw;
@@ -35,6 +42,7 @@
         align-items: center;
     }
 
+    /* Background image (decorative - appears behind all content due to z-index: 1) */
     .background {
         position: absolute;
         top: 0;
@@ -47,6 +55,7 @@
         z-index: 1;
     }
 
+    /* Content wrapper: positioned above background (z-index: 3), centers all text elements */
     .content {
         position: relative;
         z-index: 3;
@@ -54,6 +63,7 @@
         max-width: 800px;
     }
 
+    /* Main title: "MIDNIGHT METAL MONASTERY" - uses Special Elite font */
     h1 {
         font-family: 'Special Elite', serif;
         font-size: 3.5rem;
@@ -67,6 +77,7 @@
         display: inline-block;
     }
 
+    /* Container for subtitle text sections (used 3 times in HTML) */
     .subtitle {
         font-family: 'Special Elite', serif;
         font-size: 1.3rem;
@@ -76,6 +87,7 @@
         text-transform: uppercase;
     }
 
+    /* Individual paragraphs within .subtitle divs - adds background and padding */
     .subtitle p {
         background: #000;
         padding: 10px 40px;
@@ -83,6 +95,7 @@
         display: inline-block;
     }
 
+    /* Wrapper for audio player - contains player, title, error/debug messages */
     .player-wrapper {
         max-width: 600px;
         margin: 20px auto;
@@ -91,16 +104,19 @@
         border-radius: 8px;
     }
 
+    /* Audio player element - styled with rounded corners */
     #episode-player {
         border-radius: 4px;
     }
 
+    /* Title of current episode - displayed below audio player, grey color */
     #episode-title {
         margin-top: 10px;
         font-size: 0.9rem;
         color: #ccc;
     }
 
+    /* Debug info display (shows audio URL) - only visible if debug info is populated by JavaScript */
     .debug-info {
         color: #999;
         font-size: 0.8rem;
@@ -112,6 +128,7 @@
         word-break: break-all;
     }
 
+    /* Error message display - red text, only visible if an error occurs during loading */
     .error-message {
         color: #ff9999;
         font-size: 0.9rem;
@@ -121,34 +138,48 @@
     </style>
 </head>
 <body>
+    <!-- Main container: positions background and content -->
     <div class="container">
+        <!-- Background image div (decorative layer) -->
         <div class="background"></div>
 
+        <!-- Main content area: centered, contains all visible text and player -->
         <div class="content">
+            <!-- Site title -->
             <h1>MIDNIGHT METAL MONASTERY</h1>
+            
+            <!-- Subtitle section 1: Mission statement -->
             <div class="subtitle">
                 <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
             </div>
 
+            <!-- Subtitle section 2: Navigation links (All Episodes, Subscribe, About, Connect, Support) -->
             <div class="subtitle">
                 <p><a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224; <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224; <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a> &#8224; <a href="mailto:contact@midnightmetalmonastery.com">Connect</a> &#8224; <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a></p>
             </div>
 
+            <!-- Subtitle section 3: "Latest Episode:" label -->
             <div class="subtitle">
                 <p>Latest Episode:</p>
             </div>
 
+            <!-- Audio player wrapper: contains player, episode title, and error/debug messaging -->
             <div class="player-wrapper">
+                <!-- HTML5 audio player - src is populated by JavaScript from RSS feed -->
                 <audio id="episode-player" controls style="width: 100%; border-radius: 4px;">
                     Your browser does not support the audio element.
                 </audio>
+                <!-- Episode title display - populated by JavaScript -->
                 <p id="episode-title"></p>
+                <!-- Error message display - only shows if RSS loading fails -->
                 <p id="error-message" class="error-message"></p>
+                <!-- Debug info display - shows audio URL for troubleshooting (can be removed if not needed) -->
                 <p id="debug-info" class="debug-info"></p>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript: Fetches latest podcast episode from RSS feed on GitHub -->
     <script>
     async function loadLatestEpisode() {
         const errorEl = document.getElementById('error-message');
@@ -199,18 +230,22 @@
                 throw new Error('Empty URL in enclosure');
             }
             
+            // Populate the audio player src and episode title
             document.getElementById('episode-player').src = mp3Url;
             document.getElementById('episode-title').textContent = title;
+            // Populate debug info with audio URL
             debugEl.textContent = 'Audio URL: ' + mp3Url;
             
             console.log('Successfully loaded episode');
             
         } catch (error) {
             console.error('ERROR:', error.message);
+            // Display error message if loading fails
             errorEl.textContent = 'Error: ' + error.message;
         }
     }
 
+    // Run the function when page loads
     document.addEventListener('DOMContentLoaded', loadLatestEpisode);
     </script>
 </body>
