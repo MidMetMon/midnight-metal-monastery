@@ -138,82 +138,104 @@
     </div>
 
     <script>
-    async function loadLatestEpisode() {
-        const errorEl = document.getElementById('error-message');
+<script>
+async function loadLatestEpisode() {
+    const errorEl = document.getElementById('error-message');
+    const debugEl = document.getElementById('debug-info');
+    
+    try {
+        console.log('Attempting to fetch RSS feed...');
         
-        try {
-            console.log('Attempting to fetch RSS feed...');
-            
-            // Try with CORS proxy first
-            const corsProxy = 'https://api.allorigins.win/raw?url=';
-            const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
-            const fetchUrl = corsProxy + encodeURIComponent(rssUrl);
-            
-            console.log('Fetching from:', fetchUrl);
-            const response = await fetch(fetchUrl);
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+        // Try different CORS proxies in order
+        const proxies = [
+            'https://corsproxy.io/?',
+            'https://api.allorigins.win/raw?url='
+        ];
+        
+        const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
+        
+        let rssText = null;
+        let fetchUrl = '';
+        
+        for (const proxy of proxies) {
+            try {
+                fetchUrl = proxy + encodeURIComponent(rssUrl);
+                console.log('Trying proxy:', proxy);
+                console.log('Fetching from:', fetchUrl);
+                
+                const response = await fetch(fetchUrl, { timeout: 10000 });
+                
+                if (!response.ok) {
+                    console.log('Proxy failed with status:', response.status);
+                    continue;
+                }
+                
+                rssText = await response.text();
+                console.log('Successfully fetched with proxy:', proxy);
+                break;
+            } catch (proxyError) {
+                console.log('Proxy error:', proxyError.message);
+                continue;
             }
-            
-            const rssText = await response.text();
-            console.log('RSS fetched successfully, parsing...');
-
-            // Parse XML properly
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(rssText, 'application/xml');
-
-            // Check for parsing errors
-            if (xmlDoc.getElementsByTagName('parsererror').length > 0) {
-                throw new Error('Failed to parse RSS feed');
-            }
-
-            // Get the first (latest) item
-            const items = xmlDoc.getElementsByTagName('item');
-            console.log('Found items:', items.length);
-            
-            if (items.length === 0) {
-                throw new Error('No episodes found in feed');
-            }
-
-            const latestItem = items[0];
-            
-            // Extract title
-            const titleElement = latestItem.getElementsByTagName('title')[0];
-            const title = titleElement ? titleElement.textContent : 'Latest Episode';
-            console.log('Episode title:', title);
-            
-            // Extract MP3 URL from enclosure
-            const enclosureElement = latestItem.getElementsByTagName('enclosure')[0];
-            if (!enclosureElement) {
-                throw new Error('No audio file found in latest episode');
-            }
-
-            const mp3Url = enclosureElement.getAttribute('url');
-            console.log('MP3 URL:', mp3Url);
-            
-            if (!mp3Url) {
-                throw new Error('Enclosure URL not found');
-            }
-
-            // Load the player
-            const player = document.getElementById('episode-player');
-            player.src = mp3Url;
-            
-            // Display the episode title
-            document.getElementById('episode-title').textContent = title;
-            errorEl.textContent = '';
-            
-            console.log('Successfully loaded:', title);
-        } catch (error) {
-            console.error('Error loading podcast:', error);
-            errorEl.textContent = 'Error: ' + error.message;
-            document.getElementById('episode-player').style.display = 'none';
         }
-    }
+        
+        if (!rssText) {
+            throw new Error('All proxies failed. RSS feed may be unreachable.');
+        }
+        
+        debugEl.textContent = 'RSS fetched, parsing...';
+        console.log('RSS content length:', rssText.length);
 
-    // Load when the page is ready
-    document.addEventListener('DOMContentLoaded', loadLatestEpisode);
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(rssText, 'application/xml');
+
+        if (xmlDoc.getElementsByTagName('parsererror').length > 0) {
+            throw new Error('Failed to parse RSS feed');
+        }
+
+        const items = xmlDoc.getElementsByTagName('item');
+        console.log('Found items:', items.length);
+        
+        if (items.length === 0) {
+            throw new Error('No episodes found in feed');
+        }
+
+        const latestItem = items[0];
+        
+        const titleElement = latestItem.getElementsByTagName('title')[0];
+        const title = titleElement ? titleElement.textContent : 'Latest Episode';
+        console.log('Episode title:', title);
+        
+        const enclosureElement = latestItem.getElementsByTagName('enclosure')[0];
+        if (!enclosureElement) {
+            throw new Error('No audio file found in latest episode');
+        }
+
+        const mp3Url = enclosureElement.getAttribute('url');
+        console.log('MP3 URL:', mp3Url);
+        debugEl.textContent = 'Audio URL: ' + mp3Url;
+        
+        if (!mp3Url) {
+            throw new Error('Enclosure URL not found');
+        }
+
+        const player = document.getElementById('episode-player');
+        player.src = mp3Url;
+        
+        document.getElementById('episode-title').textContent = title;
+        errorEl.textContent = '';
+        
+        console.log('Successfully loaded:', title);
+    } catch (error) {
+        console.error('Error loading podcast:', error);
+        errorEl.textContent = 'Error: ' + error.message;
+        document.getElementById('episode-player').style.display = 'none';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', loadLatestEpisode);
+</script>
+
     </script>
 </body>
 </html>
