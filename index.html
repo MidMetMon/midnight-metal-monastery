@@ -7,7 +7,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
-    /* [ALL YOUR EXISTING STYLES REMAIN EXACTLY THE SAME] */
     * {
         margin: 0;
         padding: 0;
@@ -84,7 +83,6 @@
         display: inline-block;
     }
 
-    /* PLAYER STYLING */
     .player-wrapper {
         max-width: 600px;
         margin: 20px auto;
@@ -103,7 +101,12 @@
         color: #ccc;
     }
 
-    /* [ALL YOUR EXISTING MEDIA QUERIES REMAIN EXACTLY THE SAME] */
+    .error-message {
+        color: #ff9999;
+        font-size: 0.9rem;
+        padding: 10px;
+        margin-top: 10px;
+    }
     </style>
 </head>
 <body>
@@ -124,21 +127,37 @@
                 <p>Latest Episode:</p>
             </div>
 
-            <!-- PLAYER SECTION -->
             <div class="player-wrapper">
                 <audio id="episode-player" controls style="width: 100%; border-radius: 4px;">
                     Your browser does not support the audio element.
                 </audio>
                 <p id="episode-title"></p>
+                <p id="error-message" class="error-message"></p>
             </div>
         </div>
     </div>
 
     <script>
     async function loadLatestEpisode() {
+        const errorEl = document.getElementById('error-message');
+        
         try {
-            const response = await fetch('https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss');
+            console.log('Attempting to fetch RSS feed...');
+            
+            // Try with CORS proxy first
+            const corsProxy = 'https://api.allorigins.win/raw?url=';
+            const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
+            const fetchUrl = corsProxy + encodeURIComponent(rssUrl);
+            
+            console.log('Fetching from:', fetchUrl);
+            const response = await fetch(fetchUrl);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             const rssText = await response.text();
+            console.log('RSS fetched successfully, parsing...');
 
             // Parse XML properly
             const parser = new DOMParser();
@@ -151,6 +170,8 @@
 
             // Get the first (latest) item
             const items = xmlDoc.getElementsByTagName('item');
+            console.log('Found items:', items.length);
+            
             if (items.length === 0) {
                 throw new Error('No episodes found in feed');
             }
@@ -160,6 +181,7 @@
             // Extract title
             const titleElement = latestItem.getElementsByTagName('title')[0];
             const title = titleElement ? titleElement.textContent : 'Latest Episode';
+            console.log('Episode title:', title);
             
             // Extract MP3 URL from enclosure
             const enclosureElement = latestItem.getElementsByTagName('enclosure')[0];
@@ -168,6 +190,8 @@
             }
 
             const mp3Url = enclosureElement.getAttribute('url');
+            console.log('MP3 URL:', mp3Url);
+            
             if (!mp3Url) {
                 throw new Error('Enclosure URL not found');
             }
@@ -178,11 +202,13 @@
             
             // Display the episode title
             document.getElementById('episode-title').textContent = title;
+            errorEl.textContent = '';
             
             console.log('Successfully loaded:', title);
         } catch (error) {
             console.error('Error loading podcast:', error);
-            document.getElementById('episode-player').outerHTML = '<p style="color: #f99;">Error loading player: ' + error.message + '</p>';
+            errorEl.textContent = 'Error: ' + error.message;
+            document.getElementById('episode-player').style.display = 'none';
         }
     }
 
