@@ -4,235 +4,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midnight Metal Monastery</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+    a { color: #ffffff; text-decoration: none; }
+    a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+    }
+
+    .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/fbbfa54cd344f1b5de62e53fdd4fb626ae86232a/images/The_Catholic_encyclopedia_(Volume_9)%3B_an_international_work_of_reference_on_the_constitution%2C_doctrine%2C_discipline_and_history_of_the_Catholic_Church_(1907)_(14774838801).webp');
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+
+    .content {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        max-width: 800px;
+    }
+
+    h1 {
+        font-family: 'Special Elite', serif;
+        font-size: 3.5rem;
+        font-weight: 900;
+        letter-spacing: 0.15em;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        line-height: 1.3;
+        background: #000;
+        padding: 20px 40px;
+        display: inline-block;
+    }
+
+    .subtitle {
+        font-family: 'Special Elite', serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        line-height: 1.8;
+        text-transform: uppercase;
+    }
+
+    .subtitle p {
+        background: #000;
+        padding: 10px 40px;
+        margin: 8px 0;
+        display: inline-block;
+    }
+
+    .player-wrapper {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #000;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    #episode-player {
+        border-radius: 4px;
+    }
+
+    #episode-title {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    .debug-info {
+        color: #999;
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-top: 10px;
+        background: #111;
+        border-radius: 4px;
+        font-family: monospace;
+        word-break: break-all;
+    }
+
+    .error-message {
+        color: #ff9999;
+        font-size: 0.9rem;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
         body {
-            font-family: 'Special Elite', cursive;
-            background-color: #000;
-            overflow: auto;
-        }
-
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background-image: url('https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/fbbfa54cd344f1b5de62e53fdd4fb626ae86232a/images/The_Catholic_encyclopedia_(Volume_9)%3B_an_international_work_of_reference_on_the_constitution%2C_doctrine%2C_discipline_and_history_of_the_Catholic_Church_(1907)_(14774838801).webp');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            z-index: -1;
+            overflow: auto; /* Allow scrolling on mobile */
         }
 
         .container {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 20px;
-            color: #fff;
-        }
-
-        header {
-            text-align: center;
-            padding: 40px 0;
+            height: auto; /* Let container expand with content */
+            padding: 20px 0;
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-        }
-
-        .subtitle {
-            font-size: 18px;
-            color: #ccc;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-        }
-
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 14px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ccc;
-        }
-
-        .player-wrapper {
-            background-color: rgba(0, 0, 0, 0.75);
-            padding: 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-            margin: 20px 0;
-        }
-
-        #episode-player {
-            width: 100%;
+            font-size: 2rem; /* Reduce from 3.5rem */
+            padding: 15px 20px;
             margin-bottom: 15px;
         }
 
-        #episode-title {
-            font-size: 20px;
-            margin-top: 15px;
-            text-align: center;
+        .subtitle {
+            font-size: 0.95rem; /* Reduce from 1.3rem */
         }
 
-        #error-message {
-            color: #ff6b6b;
-            text-align: center;
-            padding: 10px;
+        .subtitle p {
+            padding: 8px 15px;
+            margin: 6px 0;
         }
 
-        #debug-info {
-            font-size: 12px;
-            color: #888;
-            text-align: center;
-            margin-top: 10px;
+        .content {
+            max-width: 100%;
+            padding: 0 15px;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 12px;
-            color: #aaa;
+        .player-wrapper {
+            max-width: 100%;
+            padding: 15px;
+            margin: 15px auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.5rem;
+            padding: 10px 15px;
         }
 
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 36px;
-            }
-
-            .subtitle {
-                font-size: 16px;
-            }
-
-            nav a {
-                display: block;
-                margin: 8px 0;
-            }
-
-            .container {
-                padding: 15px;
-            }
-
-            .player-wrapper {
-                padding: 20px;
-            }
+        .subtitle {
+            font-size: 0.85rem;
         }
 
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 28px;
-            }
-
-            .subtitle {
-                font-size: 14px;
-            }
-
-            nav a {
-                font-size: 12px;
-                margin: 6px 0;
-            }
-
-            .container {
-                padding: 10px;
-            }
-
-            .player-wrapper {
-                padding: 15px;
-            }
-
-            #episode-title {
-                font-size: 16px;
-            }
+        .subtitle p {
+            padding: 6px 10px;
         }
+    }
     </style>
 </head>
 <body>
-    <div class="background"></div>
-
     <div class="container">
-        <header>
-            <h1>Midnight Metal Monastery</h1>
-            <p class="subtitle">A Podcast of Sacred Darkness</p>
-        </header>
+        <div class="background"></div>
 
-        <nav>
-            <a href="https://archive.org/details/midnight-metal-monastery?sort=-date">All Episodes</a>
-            <a href="https://pod.link/1895872625">Subscribe</a>
-            <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a>
-            <a href="mailto:contact@midnightmetalmonastery.com">Connect</a>
-            <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a>
-        </nav>
+        <div class="content">
+            <h1>MIDNIGHT METAL MONASTERY</h1>
+            <div class="subtitle">
+                <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
+            </div>
 
-        <div class="player-wrapper">
-            <audio id="episode-player" controls>
-                <source src="" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <div id="episode-title"></div>
-            <div id="error-message"></div>
-            <div id="debug-info"></div>
+            <div class="subtitle">
+                <p><a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224; <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224; <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a> &#8224; <a href="mailto:contact@midnightmetalmonastery.com">Connect</a> &#8224; <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a></p>
+            </div>
+
+            <div class="subtitle">
+                <p>Latest Episode:</p>
+            </div>
+
+            <div class="player-wrapper">
+                <audio id="episode-player" controls style="width: 100%; border-radius: 4px;">
+                    Your browser does not support the audio element.
+                </audio>
+                <p id="episode-title"></p>
+                <p id="error-message" class="error-message"></p>
+                <p id="debug-info" class="debug-info"></p>
+            </div>
         </div>
-
-        <footer>
-            <p>&copy; 2024 Midnight Metal Monastery. All rights reserved.</p>
-        </footer>
     </div>
 
     <script>
-        const RSS_FEED = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
-
-        async function loadLatestEpisode() {
-            try {
-                const response = await fetch(RSS_FEED);
-                const text = await response.text();
-                const parser = new DOMParser();
-                const xmlDoc = parser.parseFromString(text, 'text/xml');
-
-                if (xmlDoc.getElementsByTagName('parsererror').length) {
-                    throw new Error('XML Parse Error');
-                }
-
-                const items = xmlDoc.getElementsByTagName('item');
-                if (items.length === 0) {
-                    throw new Error('No episodes found in RSS feed');
-                }
-
-                const latestItem = items[0];
-                const title = latestItem.getElementsByTagName('title')[0]?.textContent || 'No Title';
-                const audioUrl = latestItem.getElementsByTagName('enclosure')[0]?.getAttribute('url') || '';
-
-                document.getElementById('episode-title').textContent = title;
-                document.getElementById('episode-player').src = audioUrl;
-                document.getElementById('error-message').textContent = '';
-
-            } catch (error) {
-                document.getElementById('error-message').textContent = `Error loading episode: ${error.message}`;
-                document.getElementById('debug-info').textContent = `Feed URL: ${RSS_FEED}`;
+    async function loadLatestEpisode() {
+        const errorEl = document.getElementById('error-message');
+        const debugEl = document.getElementById('debug-info');
+        
+        try {
+            console.log('Attempting to fetch RSS feed directly from GitHub...');
+            
+            const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
+            
+            const response = await fetch(rssUrl);
+            if (!response.ok) {
+                throw new Error('HTTP ' + response.status);
             }
-        }
+            
+            const rssText = await response.text();
+            console.log('RSS fetched successfully');
+            console.log('First 500 chars:', rssText.substring(0, 500));
 
-        loadLatestEpisode();
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(rssText, 'application/xml');
+
+            if (xmlDoc.getElementsByTagName('parsererror').length > 0) {
+                throw new Error('Failed to parse XML');
+            }
+
+            const items = xmlDoc.getElementsByTagName('item');
+            console.log('Items found:', items.length);
+            
+            if (items.length === 0) {
+                throw new Error('No episodes in feed');
+            }
+
+            const latestItem = items[0];
+            const title = latestItem.getElementsByTagName('title')[0]?.textContent || 'Unknown';
+            console.log('Title:', title);
+            
+            const enclosure = latestItem.getElementsByTagName('enclosure')[0];
+            if (!enclosure) {
+                throw new Error('No audio enclosure found');
+            }
+
+            const mp3Url = enclosure.getAttribute('url');
+            console.log('MP3 URL:', mp3Url);
+            console.log('Type:', enclosure.getAttribute('type'));
+            
+            if (!mp3Url) {
+                throw new Error('Empty URL in enclosure');
+            }
+            
+            document.getElementById('episode-player').src = mp3Url;
+            document.getElementById('episode-title').textContent = title;
+            debugEl.textContent = 'Audio URL: ' + mp3Url;
+            
+            console.log('Successfully loaded episode');
+            
+        } catch (error) {
+            console.error('ERROR:', error.message);
+            errorEl.textContent = 'Error: ' + error.message;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadLatestEpisode);
     </script>
 </body>
 </html>
