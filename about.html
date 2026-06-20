@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midnight Metal Monastery</title>
-
-        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
+    <title>Midnight Metal Monastery - Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
-        *
-        a { color: #ffffff; text-decoration: none; }
-        a:hover { text-decoration: underline;
-        text-decoration-thickness: 3px;
-        }
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Special Elite', serif;
             background: #000;
             color: #fff;
             overflow: hidden;
@@ -35,7 +38,7 @@
             align-items: center;
         }
 
-        /* Full background image - no border */
+        /* Full background image */
         .background {
             position: absolute;
             top: 0;
@@ -48,12 +51,34 @@
             z-index: 1;
         }
 
+        /* Decorative icons - top left */
+        .icons-top-left {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            z-index: 3;
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #fff;
+        }
+
         /* Centered text content - black bars behind text */
         .content {
             position: relative;
             z-index: 3;
             text-align: center;
             max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
         }
 
         h1 {
@@ -85,20 +110,6 @@
             display: inline-block;
         }
 
-        /* Large logo in lower page */
-        .logo-bottom {
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
-            z-index: 3;
-            font-size: 1.2rem;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            background: #000;
-            padding: 10px 15px;
-            border: 2px solid #fff;
-        }
-
         /* Tablet */
         @media (max-width: 1024px) {
             h1 {
@@ -124,13 +135,6 @@
                 width: 28px;
                 height: 28px;
                 font-size: 11px;
-            }
-
-            .logo-bottom {
-                bottom: 30px;
-                right: 30px;
-                font-size: 1rem;
-                padding: 8px 12px;
             }
         }
 
@@ -163,11 +167,8 @@
                 font-size: 10px;
             }
 
-            .logo-bottom {
-                bottom: 20px;
-                right: 20px;
-                font-size: 0.9rem;
-                padding: 6px 10px;
+            .content {
+                max-height: 80vh;
             }
         }
 
@@ -202,11 +203,8 @@
                 font-size: 10px;
             }
 
-            .logo-bottom {
-                bottom: 20px;
-                right: 20px;
-                font-size: 0.85rem;
-                padding: 6px 10px;
+            .content {
+                max-height: 75vh;
             }
         }
 
@@ -239,57 +237,30 @@
                 font-size: 9px;
             }
 
-            .logo-bottom {
-                bottom: 15px;
-                right: 15px;
-                font-size: 0.75rem;
-                padding: 5px 8px;
+            .content {
+                max-height: 70vh;
             }
-            .player-section h2 {
-        font-family: 'Special Elite', serif;  /* Add this */
-        color: #fff;
-        background: #000;
-        padding: 20px;
-        margin-bottom: 10px;
-        font-size: 2rem;
-    }
-
-    .player-section p {
-        font-family: 'Special Elite', serif;  /* Add this */
-        color: #fff;
-        background: #000;
-        padding: 10px 20px;
-        margin-bottom: 20px;
-    }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="background"></div>
 
-        <!-- Small icons top left -->
-        <div class="icons-top-left">
-            <div class="icon">✦</div>
-            <div class="icon">◆</div>
-            <div class="icon">★</div>
-        </div>
-
         <!-- Center content - black bars behind text -->
         <div class="content">
-
-            <div class="subtitle">
+         <div class="subtitle">
                 <p>About:</p>
-                <p>For this reason I remind you to fan into a flame the gift of God, which is in you through the laying on of my hands... For God gave us not a spirit of fear but of power and love and self-control. - 2 Timothy 1:6-7</p>
                 <p>Midnight Metal Monastery is where faith meets fury. A sanctuary for those seeking spiritual depth and heavy riffs. Lifting high the name of Jesus Christ through powerful music &amp; Scripture.</p>
                 <p>This show is produced through the collaborative efforts of David Larry Carroll, Abbot and Andrew C. Schlett, First Prior with assistance from Joel Villanueva, Sacristan. The Midnight Metal Monastery logo was designed by Jeremy Tweak Hawthorne.
             </div>
 
             <div class="subtitle">
-                <p>We own none of the music played on the show. We do this ONLY for the Glory of the Lord. Jesus Saves!!!</p>
+                <p>We own none of the music played on the show. We do this  for the Glory of the Lord. Jesus Saves.</p>
             </div>
-            <div class="subtitle">
                 <p><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">Back</a></p>
-            </div>    
-
+            </div>
+        </div>
+    </div>
 </body>
 </html>
