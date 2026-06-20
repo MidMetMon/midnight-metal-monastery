@@ -155,49 +155,55 @@
         const debugEl = document.getElementById('debug-info');
         
         try {
-            console.log('Attempting to fetch RSS feed...');
+            console.log('Attempting to fetch RSS feed directly from GitHub...');
             
             const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
-            const fetchUrl = 'https://corsproxy.io/?' + rssUrl;
             
-            const response = await fetch(fetchUrl);
+            const response = await fetch(rssUrl);
+            if (!response.ok) {
+                throw new Error('HTTP ' + response.status);
+            }
+            
             const rssText = await response.text();
-            console.log('Raw RSS (first 1000 chars):', rssText.substring(0, 1000));
+            console.log('RSS fetched successfully');
+            console.log('First 500 chars:', rssText.substring(0, 500));
 
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(rssText, 'application/xml');
 
+            if (xmlDoc.getElementsByTagName('parsererror').length > 0) {
+                throw new Error('Failed to parse XML');
+            }
+
             const items = xmlDoc.getElementsByTagName('item');
-            console.log('Total items found:', items.length);
+            console.log('Items found:', items.length);
             
             if (items.length === 0) {
-                throw new Error('No episodes found');
+                throw new Error('No episodes in feed');
             }
 
             const latestItem = items[0];
             const title = latestItem.getElementsByTagName('title')[0]?.textContent || 'Unknown';
-            console.log('Episode title:', title);
+            console.log('Title:', title);
             
-            // Log ALL enclosures to see what's available
-            const enclosures = latestItem.getElementsByTagName('enclosure');
-            console.log('Total enclosures:', enclosures.length);
-            for (let i = 0; i < enclosures.length; i++) {
-                console.log('Enclosure ' + i + ':', enclosures[i].getAttribute('url'), enclosures[i].getAttribute('type'));
-            }
-            
-            const enclosure = enclosures[0];
+            const enclosure = latestItem.getElementsByTagName('enclosure')[0];
             if (!enclosure) {
-                throw new Error('No enclosures found in latest item');
+                throw new Error('No audio enclosure found');
             }
 
             const mp3Url = enclosure.getAttribute('url');
             console.log('MP3 URL:', mp3Url);
             console.log('Type:', enclosure.getAttribute('type'));
             
-            debugEl.textContent = 'URL: ' + mp3Url;
+            if (!mp3Url) {
+                throw new Error('Empty URL in enclosure');
+            }
             
             document.getElementById('episode-player').src = mp3Url;
             document.getElementById('episode-title').textContent = title;
+            debugEl.textContent = 'Audio URL: ' + mp3Url;
+            
+            console.log('Successfully loaded episode');
             
         } catch (error) {
             console.error('ERROR:', error.message);
