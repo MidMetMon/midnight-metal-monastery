@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midnight Metal Monastery</title>
 
+    <!-- Import custom font for elegant typography -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    
     <style>
+    /* ===== GLOBAL RESET ===== */
+    /* Reset default margins, padding, and set border-box sizing for all elements */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    a { color: #ffffff; text-decoration: none; }
+    /* ===== LINK STYLING ===== */
+    /* Style all links with white color and remove default underline */
+    a { 
+        color: #ffffff; 
+        text-decoration: none; 
+    }
+    
+    /* Add underline on hover for better user interaction feedback */
     a:hover {
         text-decoration: underline;
         text-decoration-thickness: 3px;
     }
 
+    /* ===== BODY STYLING ===== */
+    /* Set base font, dark background, and prevent page scrolling */
     body {
         font-family: Arial, sans-serif;
         background: #000;
@@ -26,6 +40,8 @@
         overflow: hidden;
     }
 
+    /* ===== MAIN CONTAINER ===== */
+    /* Full viewport container that centers content using flexbox */
     .container {
         position: relative;
         width: 100vw;
@@ -35,6 +51,8 @@
         align-items: center;
     }
 
+    /* ===== BACKGROUND IMAGE ===== */
+    /* Full-screen background image that covers the entire viewport */
     .background {
         position: absolute;
         top: 0;
@@ -47,6 +65,8 @@
         z-index: 1;
     }
 
+    /* ===== MAIN CONTENT AREA ===== */
+    /* Container for all text and player content, positioned above background */
     .content {
         position: relative;
         z-index: 3;
@@ -54,6 +74,8 @@
         max-width: 800px;
     }
 
+    /* ===== PAGE TITLE ===== */
+    /* Main heading with custom font, large size, and black background */
     h1 {
         font-family: 'Special Elite', serif;
         font-size: 3.5rem;
@@ -67,6 +89,8 @@
         display: inline-block;
     }
 
+    /* ===== SUBTITLE STYLING ===== */
+    /* Container for subtitle sections with custom typography */
     .subtitle {
         font-family: 'Special Elite', serif;
         font-size: 1.3rem;
@@ -76,6 +100,8 @@
         text-transform: uppercase;
     }
 
+    /* ===== SUBTITLE PARAGRAPHS ===== */
+    /* Individual subtitle paragraphs with black background for readability */
     .subtitle p {
         background: #000;
         padding: 10px 40px;
@@ -83,24 +109,35 @@
         display: inline-block;
     }
 
+    /* ===== AUDIO PLAYER WRAPPER ===== */
+    /* Container for the audio player with SEMI-TRANSPARENT BACKGROUND for transparency effect */
     .player-wrapper {
         max-width: 600px;
         margin: 20px auto;
-        background: #000;
+        background: rgba(0, 0, 0, 0.6); /* Semi-transparent black allows background to show through */
         padding: 20px;
         border-radius: 8px;
+        backdrop-filter: blur(5px); /* Optional: adds subtle blur effect for glass-morphism style */
     }
 
+    /* ===== AUDIO PLAYER ELEMENT ===== */
+    /* Styling for the HTML5 audio player with semi-transparent background */
     #episode-player {
         border-radius: 4px;
+        width: 100%;
+        background: rgba(30, 30, 30, 0.8); /* Dark semi-transparent background for player controls */
     }
 
+    /* ===== EPISODE TITLE TEXT ===== */
+    /* Display text for the currently playing episode title */
     #episode-title {
         margin-top: 10px;
         font-size: 0.9rem;
         color: #ccc;
     }
 
+    /* ===== DEBUG INFORMATION ===== */
+    /* Display debug/technical information in monospace font */
     .debug-info {
         color: #999;
         font-size: 0.8rem;
@@ -112,6 +149,8 @@
         word-break: break-all;
     }
 
+    /* ===== ERROR MESSAGE STYLING ===== */
+    /* Display error messages in red for visibility */
     .error-message {
         color: #ff9999;
         font-size: 0.9rem;
@@ -119,37 +158,44 @@
         margin-top: 10px;
     }
 
-    /* Mobile responsiveness */
+    /* ===== MOBILE RESPONSIVENESS (Tablets & Larger Mobile Devices) ===== */
     @media (max-width: 768px) {
+        /* Allow scrolling on mobile devices */
         body {
-            overflow: auto; /* Allow scrolling on mobile */
+            overflow: auto;
         }
 
+        /* Adjust container for mobile scrolling */
         .container {
-            height: auto; /* Let container expand with content */
+            height: auto;
             padding: 20px 0;
         }
 
+        /* Reduce title size for smaller screens */
         h1 {
-            font-size: 2rem; /* Reduce from 3.5rem */
+            font-size: 2rem;
             padding: 15px 20px;
             margin-bottom: 15px;
         }
 
+        /* Adjust subtitle font size */
         .subtitle {
-            font-size: 0.95rem; /* Reduce from 1.3rem */
+            font-size: 0.95rem;
         }
 
+        /* Adjust subtitle paragraph padding */
         .subtitle p {
             padding: 8px 15px;
             margin: 6px 0;
         }
 
+        /* Adjust content area padding */
         .content {
             max-width: 100%;
             padding: 0 15px;
         }
 
+        /* Adjust player wrapper for mobile */
         .player-wrapper {
             max-width: 100%;
             padding: 15px;
@@ -157,16 +203,20 @@
         }
     }
 
+    /* ===== MOBILE RESPONSIVENESS (Small Phones) ===== */
     @media (max-width: 480px) {
+        /* Further reduce title size for small phones */
         h1 {
             font-size: 1.5rem;
             padding: 10px 15px;
         }
 
+        /* Further reduce subtitle font size */
         .subtitle {
             font-size: 0.85rem;
         }
 
+        /* Reduce subtitle paragraph padding on small screens */
         .subtitle p {
             padding: 6px 10px;
         }
@@ -174,96 +224,142 @@
     </style>
 </head>
 <body>
+    <!-- Main container that holds all page content -->
     <div class="container">
+        <!-- Full-screen background image -->
         <div class="background"></div>
 
+        <!-- Content wrapper for all text and media elements -->
         <div class="content">
+            <!-- Main page title -->
             <h1>MIDNIGHT METAL MONASTERY</h1>
+            
+            <!-- Tagline/description section -->
             <div class="subtitle">
                 <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
             </div>
 
+            <!-- Navigation links section -->
             <div class="subtitle">
-                <p><a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224; <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224; <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a> &#8224; <a href="mailto:contact@midnightmetalmonastery.com">Connect</a> &#8224; <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a></p>
+                <p>
+                    <!-- Link to all episodes archive -->
+                    <a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224; 
+                    <!-- Link to podcast subscription -->
+                    <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224; 
+                    <!-- Link to about page -->
+                    <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a> &#8224; 
+                    <!-- Link to contact email -->
+                    <a href="mailto:contact@midnightmetalmonastery.com">Connect</a> &#8224; 
+                    <!-- Link to support page -->
+                    <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a>
+                </p>
             </div>
 
+            <!-- Label for latest episode section -->
             <div class="subtitle">
                 <p>Latest Episode:</p>
             </div>
 
+            <!-- Audio player wrapper with SEMI-TRANSPARENT BACKGROUND -->
             <div class="player-wrapper">
-                <audio id="episode-player" controls style="width: 100%; border-radius: 4px;">
+                <!-- HTML5 audio player element with controls -->
+                <audio id="episode-player" controls>
                     Your browser does not support the audio element.
                 </audio>
+                <!-- Displays the title of the currently loaded episode -->
                 <p id="episode-title"></p>
+                <!-- Displays error messages if the episode fails to load -->
                 <p id="error-message" class="error-message"></p>
+                <!-- Displays debug information for troubleshooting -->
                 <p id="debug-info" class="debug-info"></p>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript for loading the latest podcast episode -->
     <script>
+    /**
+     * Asynchronous function to fetch and load the latest episode from the RSS feed
+     * Parses the RSS XML and extracts the audio URL and episode title
+     */
     async function loadLatestEpisode() {
+        // Get references to error and debug display elements
         const errorEl = document.getElementById('error-message');
         const debugEl = document.getElementById('debug-info');
         
         try {
             console.log('Attempting to fetch RSS feed directly from GitHub...');
             
+            // URL to the RSS feed hosted on GitHub
             const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
             
+            // Fetch the RSS feed from the URL
             const response = await fetch(rssUrl);
             if (!response.ok) {
                 throw new Error('HTTP ' + response.status);
             }
             
+            // Convert the response to text (XML format)
             const rssText = await response.text();
             console.log('RSS fetched successfully');
             console.log('First 500 chars:', rssText.substring(0, 500));
 
+            // Parse the XML text into a DOM document
             const parser = new DOMParser();
             const xmlDoc = parser.parseFromString(rssText, 'application/xml');
 
+            // Check if XML parsing failed
             if (xmlDoc.getElementsByTagName('parsererror').length > 0) {
                 throw new Error('Failed to parse XML');
             }
 
+            // Get all episode items from the RSS feed
             const items = xmlDoc.getElementsByTagName('item');
             console.log('Items found:', items.length);
             
+            // Verify that episodes exist in the feed
             if (items.length === 0) {
                 throw new Error('No episodes in feed');
             }
 
+            // Get the first (latest) episode
             const latestItem = items[0];
             const title = latestItem.getElementsByTagName('title')[0]?.textContent || 'Unknown';
             console.log('Title:', title);
             
+            // Get the audio file enclosure (MP3 URL) from the episode
             const enclosure = latestItem.getElementsByTagName('enclosure')[0];
             if (!enclosure) {
                 throw new Error('No audio enclosure found');
             }
 
+            // Extract the audio URL from the enclosure
             const mp3Url = enclosure.getAttribute('url');
             console.log('MP3 URL:', mp3Url);
             console.log('Type:', enclosure.getAttribute('type'));
             
+            // Verify that the URL is not empty
             if (!mp3Url) {
                 throw new Error('Empty URL in enclosure');
             }
             
+            // Set the audio player source to the episode audio URL
             document.getElementById('episode-player').src = mp3Url;
+            // Display the episode title
             document.getElementById('episode-title').textContent = title;
+            // Display the audio URL in debug info
             debugEl.textContent = 'Audio URL: ' + mp3Url;
             
             console.log('Successfully loaded episode');
             
         } catch (error) {
+            // Log and display any errors that occur during the process
             console.error('ERROR:', error.message);
             errorEl.textContent = 'Error: ' + error.message;
         }
     }
 
+    // Run the loadLatestEpisode function when the page has fully loaded
     document.addEventListener('DOMContentLoaded', loadLatestEpisode);
     </script>
 </body>
