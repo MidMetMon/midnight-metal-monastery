@@ -101,6 +101,17 @@
         color: #ccc;
     }
 
+    .debug-info {
+        color: #999;
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-top: 10px;
+        background: #111;
+        border-radius: 4px;
+        font-family: monospace;
+        word-break: break-all;
+    }
+
     .error-message {
         color: #ff9999;
         font-size: 0.9rem;
@@ -133,109 +144,68 @@
                 </audio>
                 <p id="episode-title"></p>
                 <p id="error-message" class="error-message"></p>
+                <p id="debug-info" class="debug-info"></p>
             </div>
         </div>
     </div>
 
     <script>
-<script>
-async function loadLatestEpisode() {
-    const errorEl = document.getElementById('error-message');
-    const debugEl = document.getElementById('debug-info');
-    
-    try {
-        console.log('Attempting to fetch RSS feed...');
+    async function loadLatestEpisode() {
+        const errorEl = document.getElementById('error-message');
+        const debugEl = document.getElementById('debug-info');
         
-        // Try different CORS proxies in order
-        const proxies = [
-            'https://corsproxy.io/?',
-            'https://api.allorigins.win/raw?url='
-        ];
-        
-        const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
-        
-        let rssText = null;
-        let fetchUrl = '';
-        
-        for (const proxy of proxies) {
-            try {
-                fetchUrl = proxy + encodeURIComponent(rssUrl);
-                console.log('Trying proxy:', proxy);
-                console.log('Fetching from:', fetchUrl);
-                
-                const response = await fetch(fetchUrl, { timeout: 10000 });
-                
-                if (!response.ok) {
-                    console.log('Proxy failed with status:', response.status);
-                    continue;
-                }
-                
-                rssText = await response.text();
-                console.log('Successfully fetched with proxy:', proxy);
-                break;
-            } catch (proxyError) {
-                console.log('Proxy error:', proxyError.message);
-                continue;
+        try {
+            console.log('Attempting to fetch RSS feed...');
+            
+            const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
+            const fetchUrl = 'https://corsproxy.io/?' + rssUrl;
+            
+            const response = await fetch(fetchUrl);
+            const rssText = await response.text();
+            console.log('Raw RSS (first 1000 chars):', rssText.substring(0, 1000));
+
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(rssText, 'application/xml');
+
+            const items = xmlDoc.getElementsByTagName('item');
+            console.log('Total items found:', items.length);
+            
+            if (items.length === 0) {
+                throw new Error('No episodes found');
             }
-        }
-        
-        if (!rssText) {
-            throw new Error('All proxies failed. RSS feed may be unreachable.');
-        }
-        
-        debugEl.textContent = 'RSS fetched, parsing...';
-        console.log('RSS content length:', rssText.length);
 
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(rssText, 'application/xml');
+            const latestItem = items[0];
+            const title = latestItem.getElementsByTagName('title')[0]?.textContent || 'Unknown';
+            console.log('Episode title:', title);
+            
+            // Log ALL enclosures to see what's available
+            const enclosures = latestItem.getElementsByTagName('enclosure');
+            console.log('Total enclosures:', enclosures.length);
+            for (let i = 0; i < enclosures.length; i++) {
+                console.log('Enclosure ' + i + ':', enclosures[i].getAttribute('url'), enclosures[i].getAttribute('type'));
+            }
+            
+            const enclosure = enclosures[0];
+            if (!enclosure) {
+                throw new Error('No enclosures found in latest item');
+            }
 
-        if (xmlDoc.getElementsByTagName('parsererror').length > 0) {
-            throw new Error('Failed to parse RSS feed');
+            const mp3Url = enclosure.getAttribute('url');
+            console.log('MP3 URL:', mp3Url);
+            console.log('Type:', enclosure.getAttribute('type'));
+            
+            debugEl.textContent = 'URL: ' + mp3Url;
+            
+            document.getElementById('episode-player').src = mp3Url;
+            document.getElementById('episode-title').textContent = title;
+            
+        } catch (error) {
+            console.error('ERROR:', error.message);
+            errorEl.textContent = 'Error: ' + error.message;
         }
-
-        const items = xmlDoc.getElementsByTagName('item');
-        console.log('Found items:', items.length);
-        
-        if (items.length === 0) {
-            throw new Error('No episodes found in feed');
-        }
-
-        const latestItem = items[0];
-        
-        const titleElement = latestItem.getElementsByTagName('title')[0];
-        const title = titleElement ? titleElement.textContent : 'Latest Episode';
-        console.log('Episode title:', title);
-        
-        const enclosureElement = latestItem.getElementsByTagName('enclosure')[0];
-        if (!enclosureElement) {
-            throw new Error('No audio file found in latest episode');
-        }
-
-        const mp3Url = enclosureElement.getAttribute('url');
-        console.log('MP3 URL:', mp3Url);
-        debugEl.textContent = 'Audio URL: ' + mp3Url;
-        
-        if (!mp3Url) {
-            throw new Error('Enclosure URL not found');
-        }
-
-        const player = document.getElementById('episode-player');
-        player.src = mp3Url;
-        
-        document.getElementById('episode-title').textContent = title;
-        errorEl.textContent = '';
-        
-        console.log('Successfully loaded:', title);
-    } catch (error) {
-        console.error('Error loading podcast:', error);
-        errorEl.textContent = 'Error: ' + error.message;
-        document.getElementById('episode-player').style.display = 'none';
     }
-}
 
-document.addEventListener('DOMContentLoaded', loadLatestEpisode);
-</script>
-
+    document.addEventListener('DOMContentLoaded', loadLatestEpisode);
     </script>
 </body>
 </html>
