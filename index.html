@@ -103,42 +103,45 @@
     }
 
     /* Podcast player styling */
-    #podcast-player {
+    #podlove-web-player {
         max-width: 600px;
         margin: 20px auto;
+        background: #000;
+        padding: 20px;
+        border-radius: 8px;
     }
 
-.podcast-container {
-    display: flex;
-    justify-content: center; /* centers content horizontally */
-    flex-direction: column;
-    gap: 0;
-    margin: 0;
-    padding: 0;
-}
+    .podcast-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
 
-.podcast-container iframe {
-    order: 2;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
+    .podcast-container iframe {
+        order: 2;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 
-.podcast-info {
-    order: 1;
-    margin-bottom: 10px; /*!important;*/
-    padding: 0 /*!important;*/
-    font-size: 1rem;
-    font-family: 'Special Elite', serif;
-}
+    .podcast-info {
+        order: 1;
+        margin-bottom: 10px;
+        padding: 0;
+        font-size: 1rem;
+        font-family: 'Special Elite', serif;
+    }
 
-.podcast-info p {
-    margin: 0 !important;
-    color: #fff;
-    background: #000;
-    padding: 10px 40px;
-    display: inline-block;
-}
+    .podcast-info p {
+        margin: 0 !important;
+        color: #fff;
+        background: #000;
+        padding: 10px 40px;
+        display: inline-block;
+    }
 
     /* Tablet */
     @media (max-width: 1024px) {
@@ -154,7 +157,6 @@
         .subtitle p {
             padding: 8px 30px;
         }
-        
     }
 
     /* Mobile landscape */
@@ -173,7 +175,6 @@
             padding: 6px 20px;
             margin: 5px 0;
         }
-
     }
 
     /* Mobile portrait */
@@ -194,8 +195,6 @@
             padding: 8px 20px;
             margin: 6px 0;
         }
-
-
     }
 
     /* Very small phones */
@@ -214,7 +213,6 @@
             padding: 6px 15px;
             margin: 5px 0;
         }
-
     }
     </style>
 </head>
@@ -237,52 +235,11 @@
                 <p>Latest Episode:</p>
             </div>
 
-            <!-- Archive.org embed -->
-            <div id="podcast-player"></div>
+            <!-- Podlove Web Player -->
+            <div id="podlove-web-player" data-src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss"></div>
         </div>
     </div>
 
-    <script>
-    async function loadLatestEpisode() {
-      const collectionId = 'midnight-metal-monastery';
-      const apiUrl = `https://archive.org/advancedsearch.php?q=collection:${collectionId}&fl=identifier,date,title&sort=date+desc&output=json&rows=1`;
-
-      try {
-        const response = await fetch(apiUrl);
-        const data = await response.json();
-
-        if (!data.response.docs || data.response.docs.length === 0) {
-          document.getElementById('podcast-player').innerHTML =
-            '<p>No episodes found in this collection.</p>';
-          return;
-        }
-
-        const latestItem = data.response.docs[0];
-        const itemId = latestItem.identifier;
-        const title = latestItem.title || itemId;
-        const date = latestItem.date || 'Unknown date';
-
-        const embedHTML = `
-          <div class="podcast-container">
-            <iframe src="https://archive.org/embed/${itemId}"
-              width="360" height="100" frameborder="0"
-              webkitallowfullscreen="true"
-              mozallowfullscreen="true" allowfullscreen>
-            </iframe>
-            <div class="podcast-info">
-              <p><strong>${title}</strong><br><em>Published: ${date}</em></p>
-            </div>
-          </div>
-        `;
-
-        document.getElementById('podcast-player').innerHTML = embedHTML;
-
-      } catch (error) {
-        console.error('Error loading podcast:', error);
-      }
-    }
-
-    loadLatestEpisode();
-    </script>
+    <script src="https://cdn.podlove.org/web-player/embed.js"></script>
 </body>
 </html>
