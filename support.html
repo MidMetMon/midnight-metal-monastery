@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midnight Metal Monastery</title>
-
-        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
+    <title>Midnight Metal Monastery - Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
-        *
-        a { color: #ffffff; text-decoration: none; }
-        a:hover { text-decoration: underline;
-        text-decoration-thickness: 3px;
-        }
-        {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Special Elite', serif;
             background: #000;
             color: #fff;
             overflow: hidden;
@@ -35,7 +38,7 @@
             align-items: center;
         }
 
-        /* Full background image - no border */
+        /* Full background image */
         .background {
             position: absolute;
             top: 0;
@@ -48,12 +51,34 @@
             z-index: 1;
         }
 
+        /* Decorative icons - top left */
+        .icons-top-left {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            z-index: 3;
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            color: #fff;
+        }
+
         /* Centered text content - black bars behind text */
         .content {
             position: relative;
             z-index: 3;
             text-align: center;
             max-width: 800px;
+            max-height: 90vh;
+            overflow-y: auto;
         }
 
         h1 {
@@ -85,20 +110,6 @@
             display: inline-block;
         }
 
-        /* Large logo in lower page */
-        .logo-bottom {
-            position: absolute;
-            bottom: 40px;
-            right: 40px;
-            z-index: 3;
-            font-size: 1.2rem;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            background: #000;
-            padding: 10px 15px;
-            border: 2px solid #fff;
-        }
-
         /* Tablet */
         @media (max-width: 1024px) {
             h1 {
@@ -124,13 +135,6 @@
                 width: 28px;
                 height: 28px;
                 font-size: 11px;
-            }
-
-            .logo-bottom {
-                bottom: 30px;
-                right: 30px;
-                font-size: 1rem;
-                padding: 8px 12px;
             }
         }
 
@@ -163,11 +167,8 @@
                 font-size: 10px;
             }
 
-            .logo-bottom {
-                bottom: 20px;
-                right: 20px;
-                font-size: 0.9rem;
-                padding: 6px 10px;
+            .content {
+                max-height: 80vh;
             }
         }
 
@@ -202,11 +203,8 @@
                 font-size: 10px;
             }
 
-            .logo-bottom {
-                bottom: 20px;
-                right: 20px;
-                font-size: 0.85rem;
-                padding: 6px 10px;
+            .content {
+                max-height: 75vh;
             }
         }
 
@@ -239,35 +237,17 @@
                 font-size: 9px;
             }
 
-            .logo-bottom {
-                bottom: 15px;
-                right: 15px;
-                font-size: 0.75rem;
-                padding: 5px 8px;
+            .content {
+                max-height: 70vh;
             }
-            .player-section h2 {
-        font-family: 'Special Elite', serif;  /* Add this */
-        color: #fff;
-        background: #000;
-        padding: 20px;
-        margin-bottom: 10px;
-        font-size: 2rem;
-    }
-
-    .player-section p {
-        font-family: 'Special Elite', serif;  /* Add this */
-        color: #fff;
-        background: #000;
-        padding: 10px 20px;
-        margin-bottom: 20px;
-    }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="background"></div>
 
-        <!-- Small icons top left -->
+        <!-- Decorative icons - top left -->
         <div class="icons-top-left">
             <div class="icon">✦</div>
             <div class="icon">◆</div>
@@ -276,17 +256,17 @@
 
         <!-- Center content - black bars behind text -->
         <div class="content">
-
             <div class="subtitle">
                 <p>Support:</p>
                 <p>Freely you have received; freely give. - Matthew 10:8</p>
                 <p>Like the music you hear on the show? Support the artists who created it! Buy some tunes, vinyl or a tee!</p>
                 <p>Don't forget to share the show! <a href="https://anchormerchandising.com/cat/bands/m/midnight-metal-monastery/" target="_blank">Buy some merch</a> and look good doing it! Leave a rating and review on Apple Podcasts!</p>
-                <p>Consider donating to <a href="https://archive.org/donate?origin=iawww-TopNavDonateButton" target="_blank"> Archive.org</a></p>
+                <p>Consider donating to <a href="https://archive.org/donate?origin=iawww-TopNavDonateButton" target="_blank">Archive.org</a></p>
             </div>
             <div class="subtitle">
                 <p><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">Back</a></p>
-            </div>   
-
+            </div>
+        </div>
+    </div>
 </body>
 </html>
