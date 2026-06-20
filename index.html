@@ -8,7 +8,7 @@
 
     <!-- Import custom font for elegant typography -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    
+
     <style>
     /* ===== GLOBAL RESET ===== */
     /* Reset default margins, padding, and set border-box sizing for all elements */
@@ -20,11 +20,11 @@
 
     /* ===== LINK STYLING ===== */
     /* Style all links with white color and remove default underline */
-    a { 
-        color: #ffffff; 
-        text-decoration: none; 
+    a {
+        color: #ffffff;
+        text-decoration: none;
     }
-    
+
     /* Add underline on hover for better user interaction feedback */
     a:hover {
         text-decoration: underline;
@@ -113,8 +113,9 @@
     /* Container for the audio player with SEMI-TRANSPARENT BACKGROUND for transparency effect */
     .player-wrapper {
         max-width: 600px;
+        height: 110px;
         margin: 20px auto;
-        background: rgba(0, 0, 0, 0.6); /* Semi-transparent black allows background to show through */
+        background: rgba(0, 0, 0, 0.4); /* Semi-transparent black allows background to show through */
         padding: 20px;
         border-radius: 8px;
         backdrop-filter: blur(5px); /* Optional: adds subtle blur effect for glass-morphism style */
@@ -265,7 +266,7 @@
         <div class="content">
             <!-- Main page title -->
             <h1>MIDNIGHT METAL MONASTERY</h1>
-            
+
             <!-- Tagline/description section -->
             <div class="subtitle">
                 <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
@@ -275,13 +276,13 @@
             <div class="subtitle">
                 <p>
                     <!-- Link to all episodes archive -->
-                    <a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224; 
+                    <a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224;
                     <!-- Link to podcast subscription -->
-                    <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224; 
+                    <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224;
                     <!-- Link to about page -->
-                    <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a> &#8224; 
+                    <a href="https://midmetmon.github.io/midnight-metal-monastery/about.html">About</a> &#8224;
                     <!-- Link to contact email -->
-                    <a href="mailto:contact@midnightmetalmonastery.com">Connect</a> &#8224; 
+                    <a href="mailto:contact@midnightmetalmonastery.com">Connect</a> &#8224;
                     <!-- Link to support page -->
                     <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a>
                 </p>
@@ -303,7 +304,7 @@
                 <!-- Displays error messages if the episode fails to load -->
                 <p id="error-message" class="error-message"></p>
                 <!-- Displays debug information for troubleshooting -->
-                <p id="debug-info" class="debug-info"></p>
+                <!-- <p id="debug-info" class="debug-info"></p> -->
             </div>
             <!-- Copyright notice in bottom right corner -->
             <div class="copyright">© 2024 Midnight Metal Monastery. All rights reserved.
@@ -320,20 +321,20 @@
     async function loadLatestEpisode() {
         // Get references to error and debug display elements
         const errorEl = document.getElementById('error-message');
-        const debugEl = document.getElementById('debug-info');
-        
+       // const debugEl = document.getElementById('debug-info');
+
         try {
             console.log('Attempting to fetch RSS feed directly from GitHub...');
-            
+
             // URL to the RSS feed hosted on GitHub
             const rssUrl = 'https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/podcast.rss';
-            
+
             // Fetch the RSS feed from the URL
             const response = await fetch(rssUrl);
             if (!response.ok) {
                 throw new Error('HTTP ' + response.status);
             }
-            
+
             // Convert the response to text (XML format)
             const rssText = await response.text();
             console.log('RSS fetched successfully');
@@ -351,7 +352,7 @@
             // Get all episode items from the RSS feed
             const items = xmlDoc.getElementsByTagName('item');
             console.log('Items found:', items.length);
-            
+
             // Verify that episodes exist in the feed
             if (items.length === 0) {
                 throw new Error('No episodes in feed');
@@ -361,7 +362,7 @@
             const latestItem = items[0];
             const title = latestItem.getElementsByTagName('title')[0]?.textContent || 'Unknown';
             console.log('Title:', title);
-            
+
             // Get the audio file enclosure (MP3 URL) from the episode
             const enclosure = latestItem.getElementsByTagName('enclosure')[0];
             if (!enclosure) {
@@ -372,21 +373,21 @@
             const mp3Url = enclosure.getAttribute('url');
             console.log('MP3 URL:', mp3Url);
             console.log('Type:', enclosure.getAttribute('type'));
-            
+
             // Verify that the URL is not empty
             if (!mp3Url) {
                 throw new Error('Empty URL in enclosure');
             }
-            
+
             // Set the audio player source to the episode audio URL
             document.getElementById('episode-player').src = mp3Url;
             // Display the episode title
             document.getElementById('episode-title').textContent = title;
             // Display the audio URL in debug info
-            debugEl.textContent = 'Audio URL: ' + mp3Url;
-            
+            // debugEl.textContent = 'Audio URL: ' + mp3Url;
+
             console.log('Successfully loaded episode');
-            
+
         } catch (error) {
             // Log and display any errors that occur during the process
             console.error('ERROR:', error.message);
