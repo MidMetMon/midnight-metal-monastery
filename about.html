@@ -239,8 +239,35 @@
 
             .content {
                 max-height: 70vh;
-            }
+                .copyright {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.65rem;
+        color: #666;
+        opacity: 0.5;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.02em;
+        z-index: 10;
+        text-align: right;
+        line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+        .copyright {
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.6rem;
         }
+    }
+
+    @media (max-width: 480px) {
+        .copyright {
+            bottom: 8px;
+            right: 8px;
+            font-size: 0.55rem;
+        }
+    }
     </style>
 </head>
 <body>
