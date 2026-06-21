@@ -113,24 +113,12 @@
     /* Container for the audio player with SEMI-TRANSPARENT BACKGROUND for transparency effect */
     .player-wrapper {
         max-width: 600px;
-        height: auto;
+        height: 110px;
         margin: 20px auto;
         background: rgba(0, 0, 0, 0.4); /* Semi-transparent black allows background to show through */
         padding: 20px;
         border-radius: 8px;
         backdrop-filter: blur(5px); /* Optional: adds subtle blur effect for glass-morphism style */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* ===== LOGO INSIDE PLAYER WRAPPER ===== */
-    /* Logo styling with semi-transparent effect and responsive sizing */
-    .player-wrapper .logo-player {
-        width: 100px;
-        height: auto;
-        opacity: 0.35;
-        margin-bottom: 15px;
     }
 
     /* ===== AUDIO PLAYER ELEMENT ===== */
@@ -184,12 +172,6 @@
             padding: 20px 0;
         }
 
-        /* Reduce logo size for tablet in player wrapper */
-        .player-wrapper .logo-player {
-            width: 80px;
-            margin-bottom: 12px;
-        }
-
         /* Reduce title size for smaller screens */
         h1 {
             font-size: 2rem;
@@ -224,12 +206,6 @@
 
     /* ===== MOBILE RESPONSIVENESS (Small Phones) ===== */
     @media (max-width: 480px) {
-        /* Reduce logo size for small phones in player wrapper */
-        .player-wrapper .logo-player {
-            width: 60px;
-            margin-bottom: 10px;
-        }
-
         /* Further reduce title size for small phones */
         h1 {
             font-size: 1.5rem;
@@ -246,39 +222,38 @@
             padding: 6px 10px;
         }
     }
+        /* ===== COPYRIGHT NOTICE ===== */
+/* Small, subtle copyright text fixed to bottom right corner */
+.copyright {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.65rem;
+    color: #666;
+    opacity: 0.5;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.02em;
+    z-index: 10;
+    text-align: right;
+    line-height: 1.4;
+}
 
-    /* ===== COPYRIGHT NOTICE ===== */
-    /* Small, subtle copyright text fixed to bottom right corner */
+/* ===== COPYRIGHT RESPONSIVENESS ===== */
+@media (max-width: 768px) {
     .copyright {
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-        font-size: 0.65rem;
-        color: #666;
-        opacity: 0.5;
-        font-family: Arial, sans-serif;
-        letter-spacing: 0.02em;
-        z-index: 10;
-        text-align: right;
-        line-height: 1.4;
+        bottom: 10px;
+        right: 10px;
+        font-size: 0.6rem;
     }
+}
 
-    /* ===== COPYRIGHT RESPONSIVENESS ===== */
-    @media (max-width: 768px) {
-        .copyright {
-            bottom: 10px;
-            right: 10px;
-            font-size: 0.6rem;
-        }
+@media (max-width: 480px) {
+    .copyright {
+        bottom: 8px;
+        right: 8px;
+        font-size: 0.55rem;
     }
-
-    @media (max-width: 480px) {
-        .copyright {
-            bottom: 8px;
-            right: 8px;
-            font-size: 0.55rem;
-        }
-    }
+}
     </style>
 </head>
 <body>
@@ -291,6 +266,7 @@
         <div class="content">
             <!-- Main page title -->
             <h1>MIDNIGHT METAL MONASTERY</h1>
+
             <!-- Tagline/description section -->
             <div class="subtitle">
                 <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
@@ -319,9 +295,6 @@
 
             <!-- Audio player wrapper with SEMI-TRANSPARENT BACKGROUND -->
             <div class="player-wrapper">
-                <!-- Logo positioned above the audio player with semi-transparent effect -->
-                <img src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_BLACK.webp" alt="Midnight Metal Monastery Logo" class="logo-player">
-                
                 <!-- HTML5 audio player element with controls -->
                 <audio id="episode-player" controls>
                     Your browser does not support the audio element.
@@ -333,7 +306,6 @@
                 <!-- Displays debug information for troubleshooting -->
                 <!-- <p id="debug-info" class="debug-info"></p> -->
             </div>
-            
             <!-- Copyright notice in bottom right corner -->
             <div class="copyright">© 2024 Midnight Metal Monastery. All rights reserved.
             </div>
@@ -419,4 +391,12 @@
         } catch (error) {
             // Log and display any errors that occur during the process
             console.error('ERROR:', error.message);
-            errorEl.textContent = 'Error: ' + error.message
+            errorEl.textContent = 'Error: ' + error.message;
+        }
+    }
+
+    // Run the loadLatestEpisode function when the page has fully loaded
+    document.addEventListener('DOMContentLoaded', loadLatestEpisode);
+    </script>
+</body>
+</html>
