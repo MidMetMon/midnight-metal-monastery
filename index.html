@@ -74,22 +74,6 @@
         max-width: 800px;
     }
 
-    /* ===== LOGO CONTAINER ===== */
-    /* Container for the brand logo positioned above the main title */
-    .logo-container {
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    /* ===== LOGO IMAGE ===== */
-    /* Logo styling with responsive sizing */
-    .logo-container img {
-        width: 320px;
-        height: auto;
-        opacity: 1;
-    }
-
     /* ===== PAGE TITLE ===== */
     /* Main heading with custom font, large size, and black background */
     h1 {
@@ -129,12 +113,24 @@
     /* Container for the audio player with SEMI-TRANSPARENT BACKGROUND for transparency effect */
     .player-wrapper {
         max-width: 600px;
-        height: 110px;
+        height: auto;
         margin: 20px auto;
         background: rgba(0, 0, 0, 0.4); /* Semi-transparent black allows background to show through */
         padding: 20px;
         border-radius: 8px;
         backdrop-filter: blur(5px); /* Optional: adds subtle blur effect for glass-morphism style */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ===== LOGO INSIDE PLAYER WRAPPER ===== */
+    /* Logo styling with semi-transparent effect and responsive sizing */
+    .player-wrapper .logo-player {
+        width: 100px;
+        height: auto;
+        opacity: 0.35;
+        margin-bottom: 15px;
     }
 
     /* ===== AUDIO PLAYER ELEMENT ===== */
@@ -188,9 +184,10 @@
             padding: 20px 0;
         }
 
-        /* Reduce logo size for tablet */
-        .logo-container img {
-            width: 90px;
+        /* Reduce logo size for tablet in player wrapper */
+        .player-wrapper .logo-player {
+            width: 80px;
+            margin-bottom: 12px;
         }
 
         /* Reduce title size for smaller screens */
@@ -227,9 +224,9 @@
 
     /* ===== MOBILE RESPONSIVENESS (Small Phones) ===== */
     @media (max-width: 480px) {
-        /* Reduce logo size for small phones */
-        .logo-container img {
-            width: 65px;
+        /* Reduce logo size for small phones in player wrapper */
+        .player-wrapper .logo-player {
+            width: 60px;
             margin-bottom: 10px;
         }
 
@@ -292,14 +289,8 @@
 
         <!-- Content wrapper for all text and media elements -->
         <div class="content">
-            <!-- Logo placed above main title -->
-            <div class="logo-container">
-                <img src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_BLACK.webp" alt="Midnight Metal Monastery Logo">
-            </div>
-
             <!-- Main page title -->
-            <!-- <h1>MIDNIGHT METAL MONASTERY</h1>-->
-
+            <h1>MIDNIGHT METAL MONASTERY</h1>
             <!-- Tagline/description section -->
             <div class="subtitle">
                 <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
@@ -328,6 +319,9 @@
 
             <!-- Audio player wrapper with SEMI-TRANSPARENT BACKGROUND -->
             <div class="player-wrapper">
+                <!-- Logo positioned above the audio player with semi-transparent effect -->
+                <img src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_BLACK.webp" alt="Midnight Metal Monastery Logo" class="logo-player">
+                
                 <!-- HTML5 audio player element with controls -->
                 <audio id="episode-player" controls>
                     Your browser does not support the audio element.
@@ -339,6 +333,7 @@
                 <!-- Displays debug information for troubleshooting -->
                 <!-- <p id="debug-info" class="debug-info"></p> -->
             </div>
+            
             <!-- Copyright notice in bottom right corner -->
             <div class="copyright">© 2024 Midnight Metal Monastery. All rights reserved.
             </div>
@@ -424,12 +419,4 @@
         } catch (error) {
             // Log and display any errors that occur during the process
             console.error('ERROR:', error.message);
-            errorEl.textContent = 'Error: ' + error.message;
-        }
-    }
-
-    // Run the loadLatestEpisode function when the page has fully loaded
-    document.addEventListener('DOMContentLoaded', loadLatestEpisode);
-    </script>
-</body>
-</html>
+            errorEl.textContent = 'Error: ' + error.message
