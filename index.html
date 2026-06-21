@@ -74,6 +74,22 @@
         max-width: 800px;
     }
 
+    /* ===== LOGO CONTAINER ===== */
+    /* Container for the brand logo positioned above the main title */
+    .logo-container {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ===== LOGO IMAGE ===== */
+    /* Logo styling with responsive sizing */
+    .logo-container img {
+        width: 320px;
+        height: auto;
+        opacity: 1;
+    }
+
     /* ===== PAGE TITLE ===== */
     /* Main heading with custom font, large size, and black background */
     h1 {
@@ -172,6 +188,11 @@
             padding: 20px 0;
         }
 
+        /* Reduce logo size for tablet */
+        .logo-container img {
+            width: 90px;
+        }
+
         /* Reduce title size for smaller screens */
         h1 {
             font-size: 2rem;
@@ -206,6 +227,12 @@
 
     /* ===== MOBILE RESPONSIVENESS (Small Phones) ===== */
     @media (max-width: 480px) {
+        /* Reduce logo size for small phones */
+        .logo-container img {
+            width: 65px;
+            margin-bottom: 10px;
+        }
+
         /* Further reduce title size for small phones */
         h1 {
             font-size: 1.5rem;
@@ -222,38 +249,39 @@
             padding: 6px 10px;
         }
     }
-        /* ===== COPYRIGHT NOTICE ===== */
-/* Small, subtle copyright text fixed to bottom right corner */
-.copyright {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    font-size: 0.65rem;
-    color: #666;
-    opacity: 0.5;
-    font-family: Arial, sans-serif;
-    letter-spacing: 0.02em;
-    z-index: 10;
-    text-align: right;
-    line-height: 1.4;
-}
 
-/* ===== COPYRIGHT RESPONSIVENESS ===== */
-@media (max-width: 768px) {
+    /* ===== COPYRIGHT NOTICE ===== */
+    /* Small, subtle copyright text fixed to bottom right corner */
     .copyright {
-        bottom: 10px;
-        right: 10px;
-        font-size: 0.6rem;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.65rem;
+        color: #666;
+        opacity: 0.5;
+        font-family: Arial, sans-serif;
+        letter-spacing: 0.02em;
+        z-index: 10;
+        text-align: right;
+        line-height: 1.4;
     }
-}
 
-@media (max-width: 480px) {
-    .copyright {
-        bottom: 8px;
-        right: 8px;
-        font-size: 0.55rem;
+    /* ===== COPYRIGHT RESPONSIVENESS ===== */
+    @media (max-width: 768px) {
+        .copyright {
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.6rem;
+        }
     }
-}
+
+    @media (max-width: 480px) {
+        .copyright {
+            bottom: 8px;
+            right: 8px;
+            font-size: 0.55rem;
+        }
+    }
     </style>
 </head>
 <body>
@@ -264,8 +292,13 @@
 
         <!-- Content wrapper for all text and media elements -->
         <div class="content">
+            <!-- Logo placed above main title -->
+            <div class="logo-container">
+                <img src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_BLACK.webp" alt="Midnight Metal Monastery Logo">
+            </div>
+
             <!-- Main page title -->
-            <h1>MIDNIGHT METAL MONASTERY</h1>
+            <!-- <h1>MIDNIGHT METAL MONASTERY</h1>-->
 
             <!-- Tagline/description section -->
             <div class="subtitle">
