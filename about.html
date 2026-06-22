@@ -38,7 +38,6 @@
             align-items: center;
         }
 
-        /* Full background image */
         .background {
             position: absolute;
             top: 0;
@@ -51,7 +50,6 @@
             z-index: 1;
         }
 
-        /* Decorative icons - top left */
         .icons-top-left {
             position: absolute;
             top: 40px;
@@ -71,7 +69,6 @@
             color: #fff;
         }
 
-        /* Centered text content - black bars behind text */
         .content {
             position: relative;
             z-index: 3;
@@ -79,6 +76,7 @@
             max-width: 800px;
             max-height: 90vh;
             overflow-y: auto;
+            padding-bottom: 40px;
         }
 
         h1 {
@@ -110,7 +108,20 @@
             display: inline-block;
         }
 
-        /* Tablet */
+        .copyright {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            font-size: 0.65rem;
+            color: #666;
+            opacity: 0.5;
+            font-family: Arial, sans-serif;
+            letter-spacing: 0.02em;
+            z-index: 10;
+            text-align: right;
+            line-height: 1.4;
+        }
+
         @media (max-width: 1024px) {
             h1 {
                 font-size: 2.8rem;
@@ -136,9 +147,14 @@
                 height: 28px;
                 font-size: 11px;
             }
+
+            .copyright {
+                bottom: 10px;
+                right: 10px;
+                font-size: 0.6rem;
+            }
         }
 
-        /* Mobile landscape */
         @media (max-width: 768px) and (orientation: landscape) {
             h1 {
                 font-size: 1.8rem;
@@ -170,9 +186,14 @@
             .content {
                 max-height: 80vh;
             }
+
+            .copyright {
+                bottom: 8px;
+                right: 8px;
+                font-size: 0.55rem;
+            }
         }
 
-        /* Mobile portrait */
         @media (max-width: 480px) {
             h1 {
                 font-size: 1.8rem;
@@ -206,9 +227,14 @@
             .content {
                 max-height: 75vh;
             }
+
+            .copyright {
+                bottom: 8px;
+                right: 8px;
+                font-size: 0.55rem;
+            }
         }
 
-        /* Very small phones */
         @media (max-width: 360px) {
             h1 {
                 font-size: 1.4rem;
@@ -240,6 +266,12 @@
             .content {
                 max-height: 70vh;
             }
+
+            .copyright {
+                bottom: 6px;
+                right: 6px;
+                font-size: 0.5rem;
+            }
         }
     </style>
 </head>
@@ -247,21 +279,23 @@
     <div class="container">
         <div class="background"></div>
 
-        <!-- Center content - black bars behind text -->
         <div class="content">
-         <div class="subtitle">
+            <div class="subtitle">
                 <p>About:</p>
                 <p>Midnight Metal Monastery is where faith meets fury. A sanctuary for those seeking spiritual depth and heavy riffs. Lifting high the name of Jesus Christ through powerful music &amp; Scripture.</p>
-                <p>This show is produced through the collaborative efforts of David Larry Carroll, Abbot, and Andrew C. Schlett, First Prior, with assistance from Joel Villanueva, Sacristan. The Midnight Metal Monastery logo was designed by Jeremy Tweek Cawthon.
+                <p>This show is produced through the collaborative efforts of David Larry Carroll, Abbot, and Andrew C. Schlett, First Prior, with assistance from Joel Villanueva, Sacristan. The Midnight Metal Monastery logo was designed by Jeremy Tweek Cawthon.</p>
             </div>
 
             <div class="subtitle">
-                <p>We own none of the music played on the show. We do this  for the Glory of the Lord. Jesus Saves.</p>
+                <p>We own none of the music played on the show. We do this for the Glory of the Lord. Jesus Saves.</p>
             </div>
+
             <div class="subtitle">
                 <p><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">Back</a></p>
             </div>
         </div>
+
+        <div class="copyright">© 2024 Midnight Metal Monastery. All rights reserved.</div>
     </div>
 </body>
 </html>
