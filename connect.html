@@ -155,11 +155,33 @@
             }
         }
 
-        @media (max-width: 768px) and (orientation: landscape) {
+        @media (max-width: 768px) {
             h1 {
-                font-size: 1.8rem;
-                margin-bottom: 10px;
-                padding: 12px 25px;
+                font-size: 2rem;
+                margin-bottom: 15px;
+                padding: 15px 20px;
+            }
+
+            .subtitle {
+                font-size: 0.95rem;
+            }
+
+            .subtitle p {
+                padding: 8px 15px;
+                margin: 6px 0;
+            }
+
+            .copyright {
+                bottom: 10px;
+                right: 10px;
+                font-size: 0.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+                padding: 10px 15px;
             }
 
             .subtitle {
@@ -167,110 +189,13 @@
             }
 
             .subtitle p {
-                padding: 6px 20px;
-                margin: 5px 0;
-            }
-
-            .icons-top-left {
-                top: 20px;
-                left: 20px;
-                gap: 10px;
-            }
-
-            .icon {
-                width: 24px;
-                height: 24px;
-                font-size: 10px;
-            }
-
-            .content {
-                max-height: 80vh;
+                padding: 6px 10px
             }
 
             .copyright {
                 bottom: 8px;
                 right: 8px;
                 font-size: 0.55rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-                letter-spacing: 0.1em;
-                margin-bottom: 15px;
-                padding: 15px 25px;
-            }
-
-            .subtitle {
-                font-size: 0.9rem;
-                letter-spacing: 0.02em;
-            }
-
-            .subtitle p {
-                padding: 8px 20px;
-                margin: 6px 0;
-            }
-
-            .icons-top-left {
-                top: 20px;
-                left: 20px;
-                gap: 10px;
-            }
-
-            .icon {
-                width: 24px;
-                height: 24px;
-                font-size: 10px;
-            }
-
-            .content {
-                max-height: 75vh;
-            }
-
-            .copyright {
-                bottom: 8px;
-                right: 8px;
-                font-size: 0.55rem;
-            }
-        }
-
-        @media (max-width: 360px) {
-            h1 {
-                font-size: 1.4rem;
-                margin-bottom: 12px;
-                padding: 12px 18px;
-            }
-
-            .subtitle {
-                font-size: 0.8rem;
-            }
-
-            .subtitle p {
-                padding: 6px 15px;
-                margin: 5px 0;
-            }
-
-            .icons-top-left {
-                top: 15px;
-                left: 15px;
-                gap: 8px;
-            }
-
-            .icon {
-                width: 20px;
-                height: 20px;
-                font-size: 9px;
-            }
-
-            .content {
-                max-height: 70vh;
-            }
-
-            .copyright {
-                bottom: 6px;
-                right: 6px;
-                font-size: 0.5rem;
             }
         }
     </style>
