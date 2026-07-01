@@ -82,6 +82,18 @@
             overflow-y: auto;
         }
 
+        .header-wrapper {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0 auto 20px;
+        }
+
         h1 {
             font-family: 'Germania One', serif;
             font-size: 3.5rem;
@@ -125,7 +137,24 @@
             line-height: 1.4;
         }
 
+        @media (max-width: 1024px) {
+            .logo {
+                width: 120px;
+                margin: 0 auto 18px;
+            }
+
+            h1 {
+                font-size: 2.8rem;
+                padding: 18px 35px;
+            }
+        }
+
         @media (max-width: 768px){
+            .logo {
+                width: 110px;
+                margin: 0 auto 15px;
+            }
+
             h1 {
                 font-size: 2rem;
                 margin-bottom: 15px;
@@ -149,6 +178,11 @@
         }
 
         @media (max-width: 480px) {
+            .logo {
+                width: 80px;
+                margin: 0 auto 12px;
+            }
+
             h1 {
                 font-size: 1.5rem;
                 padding: 10px 15px;
@@ -156,6 +190,7 @@
 
             .subtitle {
                 font-size: 0.85rem;
+            }
 
             .subtitle p {
                 padding: 6px 10px;
@@ -175,8 +210,12 @@
 
         <!-- Center content - black bars behind text -->
         <div class="content">
-            <h1><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">MIDNIGHT METAL MONASTERY</a></h1>
-        <div class="subtitle">
+            <div class="header-wrapper">
+                <img src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_BLACK.webp" alt="Midnight Metal Monastery" class="logo">
+                <h1><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">MIDNIGHT METAL MONASTERY</a></h1>
+            </div>
+
+            <div class="subtitle">
                 <p>
                     <a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224;
                     <a href="https://pod.link/1895872625" target="_blank">Subscribe</a> &#8224;
@@ -184,6 +223,8 @@
                     <a href="https://midmetmon.github.io/midnight-metal-monastery/connect.html">Connect</a> &#8224;
                     <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a>
                 </p>
+            </div>
+
             <div class="subtitle">
                 <p>Support:</p>
                 <p>These sounds came to you freely—so freely support the artists who created them. Buy their vinyl, their tees, whatever calls to you.</p>
