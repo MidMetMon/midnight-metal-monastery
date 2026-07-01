@@ -68,6 +68,18 @@
         padding: 0 15px;
     }
 
+    .header-wrapper {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        display: block;
+        width: 150px;
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
     h1 {
         font-family: 'Germania One', serif;
         font-size: 3.5rem;
@@ -141,6 +153,11 @@
     }
 
     @media (max-width: 768px) {
+        .logo {
+            width: 110px;
+            margin: 0 auto 15px;
+        }
+
         h1 {
             font-size: 2rem;
             padding: 15px 20px;
@@ -170,6 +187,11 @@
     }
 
     @media (max-width: 480px) {
+        .logo {
+            width: 80px;
+            margin: 0 auto 12px;
+        }
+
         h1 {
             font-size: 1.5rem;
             padding: 10px 15px;
@@ -196,7 +218,10 @@
 
     <div class="container">
         <div class="content">
-            <h1>MIDNIGHT METAL MONASTERY</h1>
+            <div class="header-wrapper">
+                <img src="https://raw.githubusercontent.com/MidMetMon/midnight-metal-monastery/main/images/midnight-metal-monastery_itemimage_BLACK.webp" alt="Midnight Metal Monastery" class="logo">
+                <h1>MIDNIGHT METAL MONASTERY</h1>
+            </div>
 
             <div class="subtitle">
                 <p>We are the Warrior Monks of Christian Rock Radio—slamming the jams that worship the Lamb, servants of the Almighty God.</p>
