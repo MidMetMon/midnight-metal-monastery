@@ -79,6 +79,18 @@
             padding: 0 15px 40px 15px;
         }
 
+        .header-wrapper {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0 auto 20px;
+        }
+
         h1 {
             font-family: 'Germania One', serif;
             font-size: 3.5rem;
@@ -123,6 +135,11 @@
         }
 
         @media (max-width: 1024px) {
+            .logo {
+                width: 120px;
+                margin: 0 auto 18px;
+            }
+
             h1 {
                 font-size: 2.8rem;
                 padding: 18px 35px;
@@ -156,6 +173,11 @@
         }
 
         @media (max-width: 768px) and (orientation: landscape) {
+            .logo {
+                width: 110px;
+                margin: 0 auto 15px;
+            }
+
             h1 {
                 font-size: 2rem;
                 margin-bottom: 15px 20px;
@@ -179,6 +201,11 @@
         }
 
         @media (max-width: 480px) {
+            .logo {
+                width: 80px;
+                margin: 0 auto 12px;
+            }
+
             h1 {
                 font-size: 1.5rem;
                 padding: 10px 15px;
@@ -205,7 +232,11 @@
         <div class="background"></div>
 
         <div class="content">
-            <h1><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">MIDNIGHT METAL MONASTERY</a></h1>
+            <div class="header-wrapper">
+                <img src="path/to/your/logo.png" alt="Midnight Metal Monastery" class="logo">
+                <h1><a href="https://midmetmon.github.io/midnight-metal-monastery/index.html">MIDNIGHT METAL MONASTERY</a></h1>
+            </div>
+
             <div class="subtitle">
                 <p>
                     <a href="https://archive.org/details/midnight-metal-monastery?sort=-date" target="_blank">All Episodes</a> &#8224;
@@ -214,6 +245,8 @@
                     <a href="https://midmetmon.github.io/midnight-metal-monastery/connect.html">Connect</a> &#8224;
                     <a href="https://midmetmon.github.io/midnight-metal-monastery/support.html">Support</a>
                 </p>
+            </div>
+
             <div class="subtitle">
                 <p>About:</p>
                 <p>Midnight Metal Monastery is where faith meets fury. A sanctuary for those seeking spiritual depth and heavy riffs. Lifting high the name of Jesus Christ through powerful music &amp; Scripture.</p>
