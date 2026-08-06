@@ -5,7 +5,7 @@
     <link>https://www.facebook.com/people/Midnight-Metal-Monastery/100063629198333/</link>
     <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 22:09:06 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 02:45:00 +0000</lastBuildDate>
     <ttl>3600</ttl>
     <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
     <itunes:subtitle>Christian Rock and Metal Podcast</itunes:subtitle>
@@ -26,6 +26,20 @@
     <itunes:explicit>no</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <copyright>© 2026 Midnight Metal Monastery</copyright>
+    <item>
+      <title>Midnight Metal Monastery #262</title>
+      <link>https://archive.org/details/mmm-262</link>
+      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://archive.org/download/mmm-262/MMM%20262.mp3</guid>
+      <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
+      <itunes:episode>262</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>The bells ring, the amps roar, and the Warrior Monks gather again for episode 262. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!</itunes:summary>
+      <itunes:duration>58:00</itunes:duration>
+      <itunes:image href="https://archive.org/services/img/mmm-262"/>
+      <enclosure url="https://archive.org/download/mmm-262/MMM%20262.mp3" type="audio/mpeg" length="139529140"/>
+    </item>
     <item>
       <title>Midnight Metal Monastery #261</title>
       <link>https://archive.org/details/mmm-261</link>
@@ -1815,7 +1829,7 @@
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:summary>The bells ring, the amps roar, and the Warrior Monks gather again for episode 134. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!</itunes:summary>
       <itunes:duration>58:00</itunes:duration>
-      <itunes:image href="https://archive.org/services/img/mmm-134"/>
+      <itunes:image href="https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"/>
       <enclosure url="https://archive.org/download/mmm-134/MMM%20134.mp3" type="audio/mpeg" length="139332167"/>
     </item>
     <item>
@@ -2811,20 +2825,6 @@
       <itunes:duration>58:00</itunes:duration>
       <itunes:image href="https://archive.org/services/img/mmm-63"/>
       <enclosure url="https://archive.org/download/mmm-63/MMM%2063.mp3" type="audio/mpeg" length="139544124"/>
-    </item>
-    <item>
-      <title>Midnight Metal Monastery #62</title>
-      <link>https://archive.org/details/mmm-62</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
-      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://archive.org/download/mmm-62/MMM%2062.mp3</guid>
-      <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
-      <itunes:episode>62</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>The bells ring, the amps roar, and the Warrior Monks gather again for episode 62. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!</itunes:summary>
-      <itunes:duration>58:00</itunes:duration>
-      <itunes:image href="https://archive.org/services/img/mmm-62"/>
-      <enclosure url="https://archive.org/download/mmm-62/MMM%2062.mp3" type="audio/mpeg" length="139463825"/>
     </item>
   </channel>
 </rss>
