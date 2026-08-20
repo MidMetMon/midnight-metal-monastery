@@ -22,7 +22,7 @@ PODCAST_ITUNES_SUMMARY = (
 )
 PODCAST_AUTHOR = "David Larry Carroll, Abbot and Andrew C. Schlett, First Prior"
 PODCAST_IMAGE_URL = "https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"
-PODCAST_LINK = "https://www.facebook.com/people/Midnight-Metal-Monastery/100063629198333/"
+PODCAST_LINK = "https://midnightmetalmonastery.com/"
 PODCAST_EMAIL = "contact@midnightmetalmonastery.com"  # Replace with your contact email
 PODCAST_SUBTITLE = "Christian Rock and Metal Podcast"
 PODCAST_COPYRIGHT = "© 2026 Midnight Metal Monastery"
