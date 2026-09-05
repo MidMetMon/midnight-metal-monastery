@@ -5,7 +5,7 @@
     <link>https://midnightmetalmonastery.com/</link>
     <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2026 03:35:50 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 11:05:45 +0000</lastBuildDate>
     <ttl>3600</ttl>
     <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
     <itunes:subtitle>Christian Rock and Metal Podcast</itunes:subtitle>
@@ -1871,7 +1871,7 @@
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:summary>The bells ring, the amps roar, and the Warrior Monks gather again for episode 134. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!</itunes:summary>
       <itunes:duration>58:00</itunes:duration>
-      <itunes:image href="https://archive.org/services/img/mmm-134"/>
+      <itunes:image href="https://midmetmon.github.io/midnight-metal-monastery/images/midnight-metal-monastery_itemimage_upscayl_4x.jpg"/>
       <enclosure url="https://archive.org/download/mmm-134/MMM%20134.mp3" type="audio/mpeg" length="139332167"/>
     </item>
     <item>
@@ -2533,20 +2533,6 @@
       <enclosure url="https://archive.org/download/mmm-87/MMM%2087.mp3" type="audio/mpeg" length="139374157"/>
     </item>
     <item>
-      <title>Midnight Metal Monastery #86</title>
-      <link>https://archive.org/details/mmm-86</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
-      <pubDate>Tue, 28 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>https://archive.org/download/mmm-86/MMM%2086.mp3</guid>
-      <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
-      <itunes:episode>86</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>The bells ring, the amps roar, and the Warrior Monks gather again for episode 86. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!</itunes:summary>
-      <itunes:duration>58:00</itunes:duration>
-      <itunes:image href="https://archive.org/services/img/mmm-86"/>
-      <enclosure url="https://archive.org/download/mmm-86/MMM%2086.mp3" type="audio/mpeg" length="139390583"/>
-    </item>
-    <item>
       <title>Midnight Metal Monastery #85</title>
       <link>https://archive.org/details/mmm-85</link>
       <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
@@ -2727,20 +2713,6 @@
       <itunes:duration>58:00</itunes:duration>
       <itunes:image href="https://archive.org/services/img/mmm-73"/>
       <enclosure url="https://archive.org/download/mmm-73/MMM%2073.mp3" type="audio/mpeg" length="139414750"/>
-    </item>
-    <item>
-      <title>Midnight Metal Monastery #72</title>
-      <link>https://archive.org/details/mmm-72</link>
-      <description>We are the Warrior Monks of Christian Rock—slamming the jams that worship the Lamb, servants of the Almighty God. A Christian Rock and Metal Podcast.</description>
-      <pubDate>Tue, 22 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://archive.org/download/mmm-72/MMM%2072.mp3</guid>
-      <itunes:author>David Larry Carroll, Abbot and Andrew C. Schlett, First Prior</itunes:author>
-      <itunes:episode>72</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>The bells ring, the amps roar, and the Warrior Monks gather again for episode 72. Enter the Midnight Metal Monastery and hear the thunder that shakes the gates of Hell!</itunes:summary>
-      <itunes:duration>58:00</itunes:duration>
-      <itunes:image href="https://archive.org/services/img/mmm-72"/>
-      <enclosure url="https://archive.org/download/mmm-72/MMM%2072.mp3" type="audio/mpeg" length="139281045"/>
     </item>
     <item>
       <title>Midnight Metal Monastery #71</title>
